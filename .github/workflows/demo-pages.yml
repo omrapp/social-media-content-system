@@ -34,7 +34,9 @@ jobs:
           cache: npm
           cache-dependency-path: frontend/package-lock.json
 
-      - run: npm ci
+      # npm ci rejects this lockfile due to an npm bug with the bundled deps of
+      # @tailwindcss/oxide-wasm32-wasi (optional, never installed on Linux x64).
+      - run: npm install --no-audit --no-fund
 
       - name: Build demo
         env:
