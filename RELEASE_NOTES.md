@@ -14,7 +14,17 @@ Format: `[version | fe-version] — date` · Backend tag `vX.Y.Z` · Frontend ta
 - Landing / Privacy / Terms pages read branding from `VITE_APP_NAME`, `VITE_OPERATOR_NAME`, `VITE_CONTACT_EMAIL`, `VITE_INSTAGRAM_URL`, `VITE_YOUTUBE_URL`, `VITE_TIKTOK_URL`; social buttons hide when their URL is unset.
 - Detailed reference moved from `CLAUDE.md` to `docs/REFERENCE.md`; `OLLAMA_INSTALLATION.md` moved to `docs/`.
 
+### Added
+- **Demo mode** (`VITE_DEMO_MODE=true`): the frontend runs with no backend or Supabase. A fetch interceptor serves in-memory sample data (`frontend/src/demo/`), auth is faked, WebSocket events are simulated, and a "Live demo" banner is shown. Fixtures are lazy-loaded and excluded from normal builds.
+- **Live preview on GitHub Pages**: `.github/workflows/demo-pages.yml` builds the demo on every push to `main` (SPA fallback via `404.html`). `vite.config.ts` honours `VITE_BASE` for sub-path deploys.
+- README rewritten: live demo, screenshot gallery + animated GIFs (`docs/screenshots/`), Mermaid architecture/pipeline/lifecycle/approval diagrams, tech stack with versions, full install + usage guide.
+
+### Changed (UI)
+- App name and logo initials in the sidebar, login and Docs come from `VITE_APP_NAME` (was hardcoded "Travel CMS"); landing hero and meta description are niche-neutral.
+- Category colours: categories outside the pinned map get a stable colour from a palette (`categoryChartColor` / `categoryBadgeColor`) instead of grey.
+
 ### Removed
+- Commercial fonts (Futura, Gill Sans, Sabon LT, Northwell, Handvetica Neue) are no longer tracked; only open-licensed fonts ship.
 - Third-party LUT packs (`assets/luts/cinematic/`) and the music cache are no longer tracked — bring your own (see README).
 - Vendored Claude skills (`.claude/`), Supabase CLI temp state, stale planning docs and one-off scripts.
 

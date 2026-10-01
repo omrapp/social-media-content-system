@@ -1,6 +1,12 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
 import type { Session } from "@supabase/supabase-js";
 import { supabase } from "@/lib/supabase";
+import { IS_DEMO } from "@/demo";
+
+const DEMO_SESSION = {
+  access_token: "demo",
+  user: { id: "demo", email: "demo@example.com" },
+} as unknown as Session;
 
 interface AuthContext {
   session: Session | null;
@@ -19,6 +25,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    if (IS_DEMO) {
+      setSession(DEMO_SESSION);
+      setLoading(false);
+      return;
+    }
     supabase.auth.getSession().then(({ data: { session } }) => {
       setSession(session);
       setLoading(false);
@@ -34,6 +45,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const signOut = async () => {
+    if (IS_DEMO) return;
     await supabase.auth.signOut();
   };
 

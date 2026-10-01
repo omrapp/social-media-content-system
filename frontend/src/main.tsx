@@ -6,15 +6,20 @@ import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { Toaster } from "sonner";
 import { App } from "./App";
 import { queryClient } from "@/lib/queryClient";
+import { IS_DEMO, installDemoFetch } from "@/demo";
+import { DemoBanner } from "@/demo/DemoBanner";
 import "./index.css";
+
+if (IS_DEMO) installDemoFetch();
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     {/* QueryClientProvider wraps outside BrowserRouter so cache survives navigation */}
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <App />
       </BrowserRouter>
+      {IS_DEMO && <DemoBanner />}
       <Toaster
         richColors
         position="top-right"

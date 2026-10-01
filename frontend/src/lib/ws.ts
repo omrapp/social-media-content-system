@@ -1,4 +1,5 @@
 import { addLog } from "@/lib/logger";
+import { IS_DEMO } from "@/demo";
 import type { LogLevel } from "@/types/logs";
 
 type Handler = (data: Record<string, unknown>) => void;
@@ -22,6 +23,7 @@ function wsUrl(): string {
 }
 
 export function connectWs(token?: string) {
+  if (IS_DEMO) return; // no backend to stream events from
   if (token) _token = token;
   if (socket?.readyState === WebSocket.OPEN) return;
   socket = new WebSocket(wsUrl());
@@ -56,6 +58,11 @@ export function connectWs(token?: string) {
     addLog("debug", "system", "WebSocket disconnected — reconnecting in 3s");
     setTimeout(() => connectWs(), 3000);
   };
+}
+
+/** Demo mode only: deliver a synthetic event to local listeners (no socket). */
+export function emitLocalWsEvent(msg: Record<string, unknown>) {
+  listeners.get(msg.event as string)?.forEach((h) => h(msg));
 }
 
 export function onWsEvent(event: string, handler: Handler) {

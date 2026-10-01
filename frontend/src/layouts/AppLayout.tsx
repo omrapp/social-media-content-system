@@ -10,6 +10,7 @@ import { GlobalProgressBar } from "@/components/GlobalProgressBar";
 import { TaskCenter } from "@/components/TaskCenter";
 import { useAuth } from "@/lib/auth";
 import { SPRING_NAV } from "@/lib/motion";
+import { APP_NAME, APP_INITIALS } from "@/lib/brand";
 
 const NAV = [
   { to: "/library",    label: "Library",    icon: Library },
@@ -63,9 +64,9 @@ export function AppLayout() {
         >
           <div className={`flex items-center gap-2 min-w-0 ${collapsed ? "" : "flex-1"}`}>
             <div className="w-6 h-6 rounded-md bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center shrink-0">
-              <span className="text-white text-[10px] font-bold">TC</span>
+              <span className="text-white text-[10px] font-bold">{APP_INITIALS}</span>
             </div>
-            {!collapsed && <h1 className="text-sm font-bold text-white tracking-tight truncate">Travel CMS</h1>}
+            {!collapsed && <h1 className="text-sm font-bold text-white tracking-tight truncate">{APP_NAME}</h1>}
           </div>
           {!collapsed && (
             <button

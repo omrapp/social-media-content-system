@@ -4,6 +4,7 @@ import { Eye, EyeOff, LogIn } from "lucide-react";
 import { motion } from "framer-motion";
 import { supabase } from "@/lib/supabase";
 import { api } from "@/lib/api";
+import { APP_NAME, APP_INITIALS } from "@/lib/brand";
 
 export function LoginPage() {
   const navigate = useNavigate();
@@ -51,9 +52,9 @@ export function LoginPage() {
             animate={{ scale: 1, opacity: 1 }}
             transition={{ delay: 0.1, duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
           >
-            <span className="text-white font-bold text-base">TC</span>
+            <span className="text-white font-bold text-base">{APP_INITIALS}</span>
           </motion.div>
-          <h1 className="text-2xl font-bold text-white">Travel CMS</h1>
+          <h1 className="text-2xl font-bold text-white">{APP_NAME}</h1>
           <p className="text-gray-400 text-sm mt-1">Admin login</p>
         </div>
 

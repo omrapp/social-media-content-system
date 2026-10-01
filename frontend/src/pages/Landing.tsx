@@ -75,16 +75,16 @@ export function LandingPage() {
           </div>
 
           <h1 className="text-5xl sm:text-6xl font-bold tracking-tight leading-tight mb-4">
-            One journey.{" "}
+            Every clip.{" "}
             <span className="bg-gradient-to-r from-amber-400 via-orange-400 to-rose-400 bg-clip-text text-transparent">
-              Every destination.
+              Every platform.
             </span>
             <br />
             One reel at a time.
           </h1>
 
           <p className="text-gray-400 text-lg leading-relaxed max-w-xl mx-auto mb-10">
-            Short-form storytelling across curated categories — hidden gems, food, culture, nature and
+            Short-form storytelling across curated categories — food, fitness, culture, nature and
             more. New reels drop daily, so there's always a reason to come back.
           </p>
 
@@ -121,7 +121,7 @@ export function LandingPage() {
               {
                 step: "01",
                 title: "Tagged by category",
-                desc: "Every clip is sorted into a category — hidden gems, food, culture, nature, and more.",
+                desc: "Every clip is sorted into a category — food, fitness, culture, nature, and more.",
               },
               {
                 step: "02",
@@ -167,7 +167,7 @@ export function LandingPage() {
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-3">Follow on every platform</h2>
-            <p className="text-gray-400">3 episodes drop daily — same journey, platform-native captions.</p>
+            <p className="text-gray-400">New reels drop daily, with platform-native captions.</p>
           </div>
 
           <div className="grid sm:grid-cols-3 gap-4">

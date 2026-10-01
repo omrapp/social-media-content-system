@@ -5,6 +5,7 @@ import {
   Info, AlertCircle, CheckCircle2, Terminal, Globe, Wand2,
   Sparkles, ScanSearch, Monitor, Eraser, Video, Mic, FolderOpen, Scissors,
 } from "lucide-react";
+import { APP_NAME } from "@/lib/brand";
 
 // ── types ─────────────────────────────────────────────────────────────────────
 
@@ -103,7 +104,7 @@ function Table({ headers, rows }: { headers: string[]; rows: (string | React.Rea
 
 const overviewContent = (
   <div className="space-y-3">
-    <P>Travel CMS is a full pipeline system: download Instagram posts → index → classify → resize → generate captions → queue for publish.</P>
+    <P>{APP_NAME} is a full pipeline system: import footage → index → classify → resize or merge → generate captions → edit → queue for publish.</P>
 
     <H3>Pipeline stages (in order)</H3>
     <Table
@@ -313,7 +314,7 @@ const analyticsContent = (
     <H3>Data freshness</H3>
     <P>Analytics ingests from the Instagram Graph API on the schedule set by <Code>analytics.ingest_interval_hours</Code>. Data may lag 24–48 h behind IG's own dashboard.</P>
 
-    <Note type="info">Analytics only covers posts made through Travel CMS, not posts made directly on Instagram before you started using the system.</Note>
+    <Note type="info">Analytics only covers posts made through {APP_NAME}, not posts made directly on Instagram before you started using the system.</Note>
   </div>
 );
 
@@ -1126,7 +1127,7 @@ export function DocsPage() {
           Documentation
         </h2>
         <p className="text-sm text-gray-500 mt-1">
-          How to use every part of Travel CMS — with setting values, examples, and tips.
+          How to use every part of {APP_NAME} — with setting values, examples, and tips.
         </p>
       </div>
 
@@ -1188,7 +1189,7 @@ export function DocsPage() {
           <ExternalLink size={10} /> Report an issue
         </a>
         <span className="mx-2">·</span>
-        <span>Travel CMS — built with Claude Code</span>
+        <span>{APP_NAME}</span>
       </div>
     </div>
   );

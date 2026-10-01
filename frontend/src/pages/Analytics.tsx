@@ -7,7 +7,7 @@ import {
   TooltipProps,
 } from "recharts";
 import type { AnalyticsOverview, TimeseriesItem, CategoryStat } from "@/types/analytics";
-import { CATEGORY_CHART_COLORS } from "@/constants/colors";
+import { categoryChartColor } from "@/constants/colors";
 import { staggerContainer, fadeUp } from "@/lib/motion";
 
 // ─── Animated counter ──────────────────────────────────────────────────────
@@ -127,7 +127,7 @@ export function AnalyticsPage() {
     ? Object.entries(categories).map(([name, data]) => ({
         name: name.replace("_", " "),
         count: data.count,
-        fill: CATEGORY_CHART_COLORS[name] || "#6b7280",
+        fill: categoryChartColor(name),
       }))
     : [];
 
