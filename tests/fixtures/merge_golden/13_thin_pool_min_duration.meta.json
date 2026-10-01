@@ -1,0 +1,645 @@
+{
+  "result": {
+    "status": "completed",
+    "media_id": "<MERGE_ID>",
+    "segments": 1,
+    "sources": 3,
+    "duration_s": 22.64,
+    "source_ids": [
+      "is_short_2",
+      "is_short_0",
+      "is_short_1",
+      "is_short_0",
+      "is_short_1",
+      "is_short_2",
+      "is_short_0",
+      "is_short_2",
+      "is_short_1",
+      "is_short_0",
+      "is_short_2",
+      "is_short_1",
+      "is_short_1",
+      "is_short_0",
+      "is_short_2",
+      "is_short_0",
+      "is_short_1",
+      "is_short_2"
+    ]
+  },
+  "upserts": [
+    {
+      "id": "<MERGE_ID>",
+      "source": "merge",
+      "media_type": "VIDEO",
+      "status": "resized",
+      "reel_ready_path": "<ROOT>/reels_ready/merge_golden/13_thin_pool_min_duration/<MERGE_ID>.mp4",
+      "duration_s": 22.64,
+      "category": "Iceland",
+      "tags": [
+        "waterfall"
+      ],
+      "metadata": {
+        "merge": {
+          "source_ids": [
+            "is_short_2",
+            "is_short_0",
+            "is_short_1",
+            "is_short_0",
+            "is_short_1",
+            "is_short_2",
+            "is_short_0",
+            "is_short_2",
+            "is_short_1",
+            "is_short_0",
+            "is_short_2",
+            "is_short_1",
+            "is_short_1",
+            "is_short_0",
+            "is_short_2",
+            "is_short_0",
+            "is_short_1",
+            "is_short_2"
+          ],
+          "sources": 3,
+          "segments_per_clip": 7,
+          "graded": false,
+          "grade": "",
+          "transition": "fade",
+          "n": 1,
+          "audio": "music",
+          "music_path": "golden_bed.m4a",
+          "loop_friendly": false,
+          "fx": {
+            "slow_motion": true,
+            "ken_burns": true,
+            "transition_variety": true,
+            "adaptive_fx": true,
+            "smart_select": true,
+            "color_match": true,
+            "deband": true,
+            "hard_cuts_on_beat": true,
+            "smooth_slowmo": false,
+            "deblock": true,
+            "strong_denoise": false,
+            "sharpen": false
+          },
+          "cuts": [
+            {
+              "src": "is_short_2",
+              "start": 0.0,
+              "dur": 1.6,
+              "score": 0.902
+            },
+            {
+              "src": "is_short_0",
+              "start": 0.0,
+              "dur": 1.6,
+              "score": 0.849
+            },
+            {
+              "src": "is_short_1",
+              "start": 0.0,
+              "dur": 1.6,
+              "score": 0.813
+            },
+            {
+              "src": "is_short_0",
+              "start": 0.0,
+              "dur": 1.6,
+              "score": 0.5
+            },
+            {
+              "src": "is_short_1",
+              "start": 0.0,
+              "dur": 1.6,
+              "score": 0.6
+            },
+            {
+              "src": "is_short_2",
+              "start": 0.0,
+              "dur": 1.6,
+              "score": 0.7
+            },
+            {
+              "src": "is_short_0",
+              "start": 0.0,
+              "dur": 1.6,
+              "score": 0.5
+            },
+            {
+              "src": "is_short_2",
+              "start": 0.0,
+              "dur": 1.6,
+              "score": 0.7
+            },
+            {
+              "src": "is_short_1",
+              "start": 0.0,
+              "dur": 1.6,
+              "score": 0.6
+            },
+            {
+              "src": "is_short_0",
+              "start": 0.0,
+              "dur": 1.6,
+              "score": 0.5
+            },
+            {
+              "src": "is_short_2",
+              "start": 0.0,
+              "dur": 1.6,
+              "score": 0.7
+            },
+            {
+              "src": "is_short_1",
+              "start": 0.0,
+              "dur": 1.6,
+              "score": 0.6
+            },
+            {
+              "src": "is_short_1",
+              "start": 0.0,
+              "dur": 1.6,
+              "score": 0.6
+            },
+            {
+              "src": "is_short_0",
+              "start": 0.0,
+              "dur": 1.6,
+              "score": 0.5
+            },
+            {
+              "src": "is_short_2",
+              "start": 0.0,
+              "dur": 1.6,
+              "score": 0.7
+            },
+            {
+              "src": "is_short_0",
+              "start": 0.0,
+              "dur": 1.6,
+              "score": 0.5
+            },
+            {
+              "src": "is_short_1",
+              "start": 0.0,
+              "dur": 1.6,
+              "score": 0.6
+            },
+            {
+              "src": "is_short_2",
+              "start": 0.0,
+              "dur": 1.6,
+              "score": 0.7
+            }
+          ],
+          "plan": {
+            "plan_version": 1,
+            "timeline": {
+              "joins": [
+                {
+                  "name": "fade",
+                  "duration_s": 0.5
+                },
+                {
+                  "name": "dissolve",
+                  "duration_s": 0.5
+                },
+                {
+                  "name": "slideup",
+                  "duration_s": 0.033
+                },
+                {
+                  "name": "wipeleft",
+                  "duration_s": 0.5
+                },
+                {
+                  "name": "smoothleft",
+                  "duration_s": 0.5
+                },
+                {
+                  "name": "circleopen",
+                  "duration_s": 0.033
+                },
+                {
+                  "name": "slideleft",
+                  "duration_s": 0.5
+                },
+                {
+                  "name": "smoothright",
+                  "duration_s": 0.5
+                },
+                {
+                  "name": "wipedown",
+                  "duration_s": 0.033
+                },
+                {
+                  "name": "fade",
+                  "duration_s": 0.5
+                },
+                {
+                  "name": "dissolve",
+                  "duration_s": 0.5
+                },
+                {
+                  "name": "slideup",
+                  "duration_s": 0.033
+                },
+                {
+                  "name": "wipeleft",
+                  "duration_s": 0.5
+                },
+                {
+                  "name": "smoothleft",
+                  "duration_s": 0.5
+                },
+                {
+                  "name": "circleopen",
+                  "duration_s": 0.033
+                },
+                {
+                  "name": "slideleft",
+                  "duration_s": 0.5
+                },
+                {
+                  "name": "smoothright",
+                  "duration_s": 0.5
+                }
+              ],
+              "loop_friendly": false
+            },
+            "cuts": [
+              {
+                "src_media_id": "is_short_2",
+                "start_s": 0.0,
+                "dur_s": 1.6,
+                "score": 0.902,
+                "cleanup": {
+                  "pre": "deblock=filter=strong:block=8",
+                  "post": "colorchannelmixer=rr=0.985:gg=0.993:bb=1.022"
+                },
+                "fx": {
+                  "slow_motion": null,
+                  "ken_burns": {
+                    "direction": "in",
+                    "drift": 0
+                  }
+                }
+              },
+              {
+                "src_media_id": "is_short_0",
+                "start_s": 0.0,
+                "dur_s": 1.6,
+                "score": 0.849,
+                "cleanup": {
+                  "pre": "deblock=filter=strong:block=8",
+                  "post": "colorchannelmixer=rr=1.017:gg=0.976:bb=1.007"
+                },
+                "fx": {
+                  "slow_motion": {
+                    "factor": 0.85,
+                    "smooth": false,
+                    "smooth_max_s": 3.0
+                  },
+                  "ken_burns": {
+                    "direction": "out",
+                    "drift": 1
+                  }
+                }
+              },
+              {
+                "src_media_id": "is_short_1",
+                "start_s": 0.0,
+                "dur_s": 1.6,
+                "score": 0.813,
+                "cleanup": {
+                  "pre": "deblock=filter=strong:block=8",
+                  "post": "colorchannelmixer=rr=1.035:gg=1.042:bb=0.931"
+                },
+                "fx": {
+                  "slow_motion": {
+                    "factor": 0.85,
+                    "smooth": false,
+                    "smooth_max_s": 3.0
+                  },
+                  "ken_burns": {
+                    "direction": "in",
+                    "drift": 2
+                  }
+                }
+              },
+              {
+                "src_media_id": "is_short_0",
+                "start_s": 0.0,
+                "dur_s": 1.6,
+                "score": 0.5,
+                "cleanup": {
+                  "pre": "deblock=filter=strong:block=8",
+                  "post": ""
+                },
+                "fx": {
+                  "slow_motion": null,
+                  "ken_burns": {
+                    "direction": "out",
+                    "drift": 3
+                  }
+                }
+              },
+              {
+                "src_media_id": "is_short_1",
+                "start_s": 0.0,
+                "dur_s": 1.6,
+                "score": 0.6,
+                "cleanup": {
+                  "pre": "deblock=filter=strong:block=8",
+                  "post": ""
+                },
+                "fx": {
+                  "slow_motion": {
+                    "factor": 0.85,
+                    "smooth": false,
+                    "smooth_max_s": 3.0
+                  },
+                  "ken_burns": {
+                    "direction": "in",
+                    "drift": 0
+                  }
+                }
+              },
+              {
+                "src_media_id": "is_short_2",
+                "start_s": 0.0,
+                "dur_s": 1.6,
+                "score": 0.7,
+                "cleanup": {
+                  "pre": "deblock=filter=strong:block=8",
+                  "post": ""
+                },
+                "fx": {
+                  "slow_motion": null,
+                  "ken_burns": {
+                    "direction": "out",
+                    "drift": 1
+                  }
+                }
+              },
+              {
+                "src_media_id": "is_short_0",
+                "start_s": 0.0,
+                "dur_s": 1.6,
+                "score": 0.5,
+                "cleanup": {
+                  "pre": "deblock=filter=strong:block=8",
+                  "post": ""
+                },
+                "fx": {
+                  "slow_motion": {
+                    "factor": 0.85,
+                    "smooth": false,
+                    "smooth_max_s": 3.0
+                  },
+                  "ken_burns": {
+                    "direction": "in",
+                    "drift": 2
+                  }
+                }
+              },
+              {
+                "src_media_id": "is_short_2",
+                "start_s": 0.0,
+                "dur_s": 1.6,
+                "score": 0.7,
+                "cleanup": {
+                  "pre": "deblock=filter=strong:block=8",
+                  "post": ""
+                },
+                "fx": {
+                  "slow_motion": null,
+                  "ken_burns": {
+                    "direction": "out",
+                    "drift": 3
+                  }
+                }
+              },
+              {
+                "src_media_id": "is_short_1",
+                "start_s": 0.0,
+                "dur_s": 1.6,
+                "score": 0.6,
+                "cleanup": {
+                  "pre": "deblock=filter=strong:block=8",
+                  "post": ""
+                },
+                "fx": {
+                  "slow_motion": {
+                    "factor": 0.85,
+                    "smooth": false,
+                    "smooth_max_s": 3.0
+                  },
+                  "ken_burns": {
+                    "direction": "in",
+                    "drift": 0
+                  }
+                }
+              },
+              {
+                "src_media_id": "is_short_0",
+                "start_s": 0.0,
+                "dur_s": 1.6,
+                "score": 0.5,
+                "cleanup": {
+                  "pre": "deblock=filter=strong:block=8",
+                  "post": ""
+                },
+                "fx": {
+                  "slow_motion": null,
+                  "ken_burns": {
+                    "direction": "out",
+                    "drift": 1
+                  }
+                }
+              },
+              {
+                "src_media_id": "is_short_2",
+                "start_s": 0.0,
+                "dur_s": 1.6,
+                "score": 0.7,
+                "cleanup": {
+                  "pre": "deblock=filter=strong:block=8",
+                  "post": ""
+                },
+                "fx": {
+                  "slow_motion": {
+                    "factor": 0.85,
+                    "smooth": false,
+                    "smooth_max_s": 3.0
+                  },
+                  "ken_burns": {
+                    "direction": "in",
+                    "drift": 2
+                  }
+                }
+              },
+              {
+                "src_media_id": "is_short_1",
+                "start_s": 0.0,
+                "dur_s": 1.6,
+                "score": 0.6,
+                "cleanup": {
+                  "pre": "deblock=filter=strong:block=8",
+                  "post": ""
+                },
+                "fx": {
+                  "slow_motion": null,
+                  "ken_burns": {
+                    "direction": "out",
+                    "drift": 3
+                  }
+                }
+              },
+              {
+                "src_media_id": "is_short_1",
+                "start_s": 0.0,
+                "dur_s": 1.6,
+                "score": 0.6,
+                "cleanup": {
+                  "pre": "deblock=filter=strong:block=8",
+                  "post": ""
+                },
+                "fx": {
+                  "slow_motion": {
+                    "factor": 0.85,
+                    "smooth": false,
+                    "smooth_max_s": 3.0
+                  },
+                  "ken_burns": {
+                    "direction": "in",
+                    "drift": 0
+                  }
+                }
+              },
+              {
+                "src_media_id": "is_short_0",
+                "start_s": 0.0,
+                "dur_s": 1.6,
+                "score": 0.5,
+                "cleanup": {
+                  "pre": "deblock=filter=strong:block=8",
+                  "post": ""
+                },
+                "fx": {
+                  "slow_motion": null,
+                  "ken_burns": {
+                    "direction": "out",
+                    "drift": 1
+                  }
+                }
+              },
+              {
+                "src_media_id": "is_short_2",
+                "start_s": 0.0,
+                "dur_s": 1.6,
+                "score": 0.7,
+                "cleanup": {
+                  "pre": "deblock=filter=strong:block=8",
+                  "post": ""
+                },
+                "fx": {
+                  "slow_motion": {
+                    "factor": 0.85,
+                    "smooth": false,
+                    "smooth_max_s": 3.0
+                  },
+                  "ken_burns": {
+                    "direction": "in",
+                    "drift": 2
+                  }
+                }
+              },
+              {
+                "src_media_id": "is_short_0",
+                "start_s": 0.0,
+                "dur_s": 1.6,
+                "score": 0.5,
+                "cleanup": {
+                  "pre": "deblock=filter=strong:block=8",
+                  "post": ""
+                },
+                "fx": {
+                  "slow_motion": null,
+                  "ken_burns": {
+                    "direction": "out",
+                    "drift": 3
+                  }
+                }
+              },
+              {
+                "src_media_id": "is_short_1",
+                "start_s": 0.0,
+                "dur_s": 1.6,
+                "score": 0.6,
+                "cleanup": {
+                  "pre": "deblock=filter=strong:block=8",
+                  "post": ""
+                },
+                "fx": {
+                  "slow_motion": {
+                    "factor": 0.85,
+                    "smooth": false,
+                    "smooth_max_s": 3.0
+                  },
+                  "ken_burns": {
+                    "direction": "in",
+                    "drift": 0
+                  }
+                }
+              },
+              {
+                "src_media_id": "is_short_2",
+                "start_s": 0.0,
+                "dur_s": 1.6,
+                "score": 0.7,
+                "cleanup": {
+                  "pre": "deblock=filter=strong:block=8",
+                  "post": ""
+                },
+                "fx": {
+                  "slow_motion": null,
+                  "ken_burns": {
+                    "direction": "out",
+                    "drift": 1
+                  }
+                }
+              }
+            ],
+            "audio": {
+              "enter_offset_s": 2.5,
+              "mode": "music",
+              "fade_s": 1.0,
+              "volume": 1.0,
+              "music_path": "golden_bed.m4a"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "track_calls": [
+    {
+      "category": "Iceland",
+      "tags": [
+        "waterfall"
+      ],
+      "clip_len": 20.0,
+      "mood": null,
+      "avoid_ids": null,
+      "avoid_names": null
+    }
+  ],
+  "enter_calls": [
+    {
+      "track": "golden_bed.m4a",
+      "seg_len": 22.635
+    }
+  ]
+}

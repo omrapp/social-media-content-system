@@ -1,0 +1,202 @@
+{
+  "result": {
+    "status": "completed",
+    "media_id": "<MERGE_ID>",
+    "segments": 4,
+    "sources": 4,
+    "duration_s": 30.63,
+    "source_ids": [
+      "jp_local_01",
+      "jp_stock_00",
+      "jp_local_00",
+      "jp_stock_01"
+    ]
+  },
+  "upserts": [
+    {
+      "id": "<MERGE_ID>",
+      "source": "merge",
+      "media_type": "VIDEO",
+      "status": "resized",
+      "reel_ready_path": "<ROOT>/reels_ready/merge_golden/08_audio_music_explicit/<MERGE_ID>.mp4",
+      "duration_s": 30.63,
+      "category": "Japan",
+      "tags": [
+        "temple",
+        "kyoto"
+      ],
+      "metadata": {
+        "merge": {
+          "source_ids": [
+            "jp_local_01",
+            "jp_stock_00",
+            "jp_local_00",
+            "jp_stock_01"
+          ],
+          "sources": 4,
+          "segments_per_clip": 3,
+          "graded": false,
+          "grade": "",
+          "transition": "fade",
+          "n": 4,
+          "audio": "music",
+          "music_path": "golden_bed.m4a",
+          "loop_friendly": false,
+          "fx": {
+            "slow_motion": true,
+            "ken_burns": true,
+            "transition_variety": true,
+            "adaptive_fx": true,
+            "smart_select": true,
+            "color_match": true,
+            "deband": true,
+            "hard_cuts_on_beat": true,
+            "smooth_slowmo": false,
+            "deblock": true,
+            "strong_denoise": false,
+            "sharpen": false
+          },
+          "cuts": [
+            {
+              "src": "jp_local_01",
+              "start": 0.0,
+              "dur": 7.933,
+              "score": 0.793
+            },
+            {
+              "src": "jp_stock_00",
+              "start": 0.0,
+              "dur": 7.933,
+              "score": 0.708
+            },
+            {
+              "src": "jp_local_00",
+              "start": 4.092,
+              "dur": 7.9,
+              "score": 0.788
+            },
+            {
+              "src": "jp_stock_01",
+              "start": 4.092,
+              "dur": 7.9,
+              "score": 0.137
+            }
+          ],
+          "plan": {
+            "plan_version": 1,
+            "timeline": {
+              "joins": [
+                {
+                  "name": "fade",
+                  "duration_s": 0.5
+                },
+                {
+                  "name": "dissolve",
+                  "duration_s": 0.5
+                },
+                {
+                  "name": "slideup",
+                  "duration_s": 0.033
+                }
+              ],
+              "loop_friendly": false
+            },
+            "cuts": [
+              {
+                "src_media_id": "jp_local_01",
+                "start_s": 0.0,
+                "dur_s": 7.933,
+                "score": 0.793,
+                "cleanup": {
+                  "pre": "deblock=filter=strong:block=8",
+                  "post": "colorchannelmixer=rr=1.019:gg=0.926:bb=1.066"
+                },
+                "fx": {
+                  "slow_motion": null,
+                  "ken_burns": null
+                }
+              },
+              {
+                "src_media_id": "jp_stock_00",
+                "start_s": 0.0,
+                "dur_s": 7.933,
+                "score": 0.708,
+                "cleanup": {
+                  "pre": "deblock=filter=strong:block=8",
+                  "post": "colorchannelmixer=rr=1.036:gg=1.042:bb=0.930"
+                },
+                "fx": {
+                  "slow_motion": {
+                    "factor": 0.85,
+                    "smooth": false,
+                    "smooth_max_s": 3.0
+                  },
+                  "ken_burns": {
+                    "direction": "out",
+                    "drift": 1
+                  }
+                }
+              },
+              {
+                "src_media_id": "jp_local_00",
+                "start_s": 4.092,
+                "dur_s": 7.9,
+                "score": 0.788,
+                "cleanup": {
+                  "pre": "deblock=filter=strong:block=8",
+                  "post": "colorchannelmixer=rr=1.040:gg=0.994:bb=0.968"
+                },
+                "fx": {
+                  "slow_motion": {
+                    "factor": 0.85,
+                    "smooth": false,
+                    "smooth_max_s": 3.0
+                  },
+                  "ken_burns": {
+                    "direction": "in",
+                    "drift": 2
+                  }
+                }
+              },
+              {
+                "src_media_id": "jp_stock_01",
+                "start_s": 4.092,
+                "dur_s": 7.9,
+                "score": 0.137,
+                "cleanup": {
+                  "pre": "deblock=filter=strong:block=8,hqdn3d=2:1.5:3:3",
+                  "post": "colorchannelmixer=rr=1.078:gg=1.062:bb=0.884,cas=0.40"
+                },
+                "fx": {
+                  "slow_motion": {
+                    "factor": 0.85,
+                    "smooth": false,
+                    "smooth_max_s": 3.0
+                  },
+                  "ken_burns": {
+                    "direction": "out",
+                    "drift": 3
+                  }
+                }
+              }
+            ],
+            "audio": {
+              "enter_offset_s": 2.5,
+              "mode": "music",
+              "fade_s": 1.0,
+              "volume": 1.0,
+              "music_path": "golden_bed.m4a"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "track_calls": [],
+  "enter_calls": [
+    {
+      "track": "golden_bed.m4a",
+      "seg_len": 30.634
+    }
+  ]
+}

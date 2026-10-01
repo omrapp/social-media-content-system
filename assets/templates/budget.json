@@ -1,0 +1,27 @@
+{
+  "name": "budget_reel",
+  "intro": {
+    "text": "{hook_text}",
+    "duration": 2,
+    "transition": "fade",
+    "font_size": 64
+  },
+  "body": {
+    "ken_burns": false,
+    "location_text": "{city}, {country}",
+    "location_duration": 3
+  },
+  "outro": {
+    "text": "Follow for more tips!",
+    "duration": 2,
+    "transition": "fade",
+    "font_size": 48
+  },
+  "audio": {
+    "genre": "acoustic",
+    "mood": "upbeat",
+    "volume": 0.18,
+    "fade_out": 2
+  },
+  "lut": "cool.cube"
+}

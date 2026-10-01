@@ -1,0 +1,25 @@
+# Supabase CLI project configuration for Insta Content System.
+# Reference: https://supabase.com/docs/guides/cli/config
+# Slug must be lowercase letters, digits, dashes.
+project_id = "insta-content-system"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public"]
+
+[db]
+port = 54322
+
+[studio]
+enabled = true
+port = 54323
+
+[auth]
+enabled = true
+site_url = "http://localhost:5173"
+additional_redirect_urls = ["http://localhost:5173"]
+
+[auth.email]
+enable_signup = false
+enable_confirmations = false

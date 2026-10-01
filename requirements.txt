@@ -1,0 +1,30 @@
+requests
+openai
+groq
+python-dotenv
+filelock
+fastapi
+uvicorn[standard]
+python-multipart
+supabase
+boto3
+websockets
+pyjwt[crypto]
+apscheduler>=3.10
+httpx
+httpcore>=1.0.9
+hpack>=4.1.0
+google-api-python-client
+google-auth-oauthlib
+google-auth-httplib2
+pytrends                 # Enh B: free Google Trends (unofficial; best-effort)
+scenedetect[opencv]      # merge_clips: PySceneDetect best sub-shot per clip (lazy-imported); also provides cv2 for decaption TELEA/NS inpaint
+librosa                  # merge_clips: beat-aligned cuts when merge.beat_sync (lazy-imported)
+onnxruntime              # decaption: YOLO11 text detector inference (lazy-imported via backend/vendor/vtr; import-guarded)
+numpy                    # decaption: array ops for detector pre/post-processing (also a transitive dep)
+pillow                   # decaption: image I/O for the detector
+edge-tts                 # voiceover: free MIT TTS + word-boundary timestamps for burned subtitles (1.8.0)
+
+# Dev / CI
+pytest
+pytest-asyncio

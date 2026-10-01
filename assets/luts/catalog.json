@@ -1,0 +1,2082 @@
+{
+  "version": 1,
+  "luts": [
+    {
+      "file": "cinematic/aerial_sky.cube",
+      "name": "Aerial Sky",
+      "tags": [
+        "adventurous",
+        "calm"
+      ],
+      "pillars": [
+        "nature"
+      ],
+      "intensity": 0.85,
+      "source": "01_Dji LUTs_Aerial Sky.cube"
+    },
+    {
+      "file": "cinematic/landscape.cube",
+      "name": "Landscape",
+      "tags": [
+        "adventurous",
+        "calm"
+      ],
+      "pillars": [
+        "nature"
+      ],
+      "intensity": 0.85,
+      "source": "01_Drone LUTs_Landscape.cube"
+    },
+    {
+      "file": "cinematic/beige_color.cube",
+      "name": "Beige Color",
+      "tags": [
+        "romantic",
+        "calm"
+      ],
+      "pillars": [
+        "food",
+        "beach",
+        "culture"
+      ],
+      "intensity": 0.85,
+      "source": "01_Film Emulation LUTs_Beige Color.cube"
+    },
+    {
+      "file": "cinematic/twilight.cube",
+      "name": "Twilight",
+      "tags": [
+        "romantic",
+        "calm"
+      ],
+      "pillars": [
+        "beach",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "01_Ground Control LUTs_Twilight.cube"
+    },
+    {
+      "file": "cinematic/vintage.cube",
+      "name": "Vintage",
+      "tags": [
+        "reflective",
+        "romantic"
+      ],
+      "pillars": [
+        "culture",
+        "food"
+      ],
+      "intensity": 0.85,
+      "source": "01_Vintage_LUTs_Vintage.cube"
+    },
+    {
+      "file": "cinematic/vibrance_colors.cube",
+      "name": "Vibrance Colors",
+      "tags": [
+        "epic",
+        "adventurous"
+      ],
+      "pillars": [
+        "hidden_gem",
+        "nature"
+      ],
+      "intensity": 0.85,
+      "source": "02_Dji LUTs_Vibrance Colors.cube"
+    },
+    {
+      "file": "cinematic/cross_process.cube",
+      "name": "Cross Process",
+      "tags": [
+        "reflective",
+        "romantic"
+      ],
+      "pillars": [
+        "culture",
+        "food"
+      ],
+      "intensity": 0.85,
+      "source": "02_Film Emulation LUTs_Cross Process.cube"
+    },
+    {
+      "file": "cinematic/frosty.cube",
+      "name": "Frosty",
+      "tags": [
+        "calm",
+        "reflective"
+      ],
+      "pillars": [
+        "nature"
+      ],
+      "intensity": 0.85,
+      "source": "02_Ground Control LUTs_Frosty.cube"
+    },
+    {
+      "file": "cinematic/matte.cube",
+      "name": "Matte",
+      "tags": [
+        "reflective",
+        "romantic"
+      ],
+      "pillars": [
+        "culture",
+        "food"
+      ],
+      "intensity": 0.85,
+      "source": "02_Inspired By Peter McKinnon LUTs_Matte.cube"
+    },
+    {
+      "file": "cinematic/cool_mist.cube",
+      "name": "Cool Mist",
+      "tags": [
+        "calm",
+        "reflective"
+      ],
+      "pillars": [
+        "nature",
+        "budget"
+      ],
+      "intensity": 0.85,
+      "source": "02_Mavic Pro LUTs_Cool Mist.cube"
+    },
+    {
+      "file": "cinematic/bright_light.cube",
+      "name": "Bright Light",
+      "tags": [
+        "reflective",
+        "romantic"
+      ],
+      "pillars": [
+        "culture",
+        "food",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "02_Vintage_LUTs_Bright Light.cube"
+    },
+    {
+      "file": "cinematic/sunset.cube",
+      "name": "Sunset",
+      "tags": [
+        "romantic",
+        "calm"
+      ],
+      "pillars": [
+        "food",
+        "beach"
+      ],
+      "intensity": 0.85,
+      "source": "03_Dji LUTs_Sunset.cube"
+    },
+    {
+      "file": "cinematic/violet_midlight.cube",
+      "name": "Violet Midlight",
+      "tags": [
+        "calm",
+        "reflective"
+      ],
+      "pillars": [
+        "nature",
+        "beach",
+        "culture"
+      ],
+      "intensity": 0.85,
+      "source": "03_Film Emulation LUTs_Violet Midlight.cube"
+    },
+    {
+      "file": "cinematic/pastel_film.cube",
+      "name": "Pastel Film",
+      "tags": [
+        "romantic",
+        "fun"
+      ],
+      "pillars": [
+        "culture",
+        "food"
+      ],
+      "intensity": 0.85,
+      "source": "03_Ground Control LUTs_Pastel Film.cube"
+    },
+    {
+      "file": "cinematic/dark_brown.cube",
+      "name": "Dark Brown",
+      "tags": [
+        "calm",
+        "reflective"
+      ],
+      "pillars": [
+        "nature",
+        "beach",
+        "culture"
+      ],
+      "intensity": 0.85,
+      "source": "03_Vintage_ LUTs_Dark Brown.cube"
+    },
+    {
+      "file": "cinematic/blue_space.cube",
+      "name": "Blue Space",
+      "tags": [
+        "calm",
+        "reflective"
+      ],
+      "pillars": [
+        "nature",
+        "beach"
+      ],
+      "intensity": 0.85,
+      "source": "04_Dji LUTs_Blue Space.cube"
+    },
+    {
+      "file": "cinematic/dramatic_light.cube",
+      "name": "Dramatic Light",
+      "tags": [
+        "reflective",
+        "romantic"
+      ],
+      "pillars": [
+        "culture",
+        "food",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "04_Film Emulation LUTs_Dramatic Light.cube"
+    },
+    {
+      "file": "cinematic/contrast.cube",
+      "name": "Contrast",
+      "tags": [
+        "epic",
+        "adventurous"
+      ],
+      "pillars": [
+        "hidden_gem",
+        "nature"
+      ],
+      "intensity": 0.85,
+      "source": "04_Ground Control LUTs_Contrast.cube"
+    },
+    {
+      "file": "cinematic/magenta_shadows.cube",
+      "name": "Magenta Shadows",
+      "tags": [
+        "calm",
+        "reflective"
+      ],
+      "pillars": [
+        "nature",
+        "beach",
+        "culture"
+      ],
+      "intensity": 0.85,
+      "source": "04_Vintage_LUTs_Magenta Shadows.cube"
+    },
+    {
+      "file": "cinematic/matte_2.cube",
+      "name": "Matte",
+      "tags": [
+        "reflective",
+        "romantic"
+      ],
+      "pillars": [
+        "culture",
+        "food"
+      ],
+      "intensity": 0.85,
+      "source": "05_Dji LUTs_Matte.cube"
+    },
+    {
+      "file": "cinematic/teal_orange.cube",
+      "name": "Teal & Orange",
+      "tags": [
+        "epic",
+        "adventurous"
+      ],
+      "pillars": [
+        "nature",
+        "beach",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "05_Film Emulation LUTs_Orange & Teal.cube"
+    },
+    {
+      "file": "cinematic/green_cast.cube",
+      "name": "Green Cast",
+      "tags": [
+        "adventurous",
+        "calm"
+      ],
+      "pillars": [
+        "nature"
+      ],
+      "intensity": 0.85,
+      "source": "05_Ground Control LUTs_Green Cast.cube"
+    },
+    {
+      "file": "cinematic/skyscraper.cube",
+      "name": "Skyscraper",
+      "tags": [
+        "epic"
+      ],
+      "pillars": [
+        "culture",
+        "budget"
+      ],
+      "intensity": 0.85,
+      "source": "05_Inspired By Peter McKinnon LUTs_Skyscraper.cube"
+    },
+    {
+      "file": "cinematic/tint_matte.cube",
+      "name": "Tint Matte",
+      "tags": [
+        "reflective",
+        "romantic"
+      ],
+      "pillars": [
+        "culture",
+        "food"
+      ],
+      "intensity": 0.85,
+      "source": "05_Vintage_LUTs_Tint Matte.cube"
+    },
+    {
+      "file": "cinematic/wheat_olor.cube",
+      "name": "Wheat \u0421olor",
+      "tags": [
+        "romantic",
+        "calm"
+      ],
+      "pillars": [
+        "food",
+        "beach"
+      ],
+      "intensity": 0.85,
+      "source": "06_Dji LUTs_Wheat \u0421olor.cube"
+    },
+    {
+      "file": "cinematic/matte_3.cube",
+      "name": "Matte",
+      "tags": [
+        "reflective",
+        "romantic"
+      ],
+      "pillars": [
+        "culture",
+        "food"
+      ],
+      "intensity": 0.85,
+      "source": "06_Film Emulation LUTs_Matte.cube"
+    },
+    {
+      "file": "cinematic/b_w.cube",
+      "name": "B&W",
+      "tags": [
+        "reflective",
+        "romantic"
+      ],
+      "pillars": [
+        "culture",
+        "food"
+      ],
+      "intensity": 0.85,
+      "source": "06_Vintage_ LUTs_B&W.cube"
+    },
+    {
+      "file": "cinematic/vintage_2.cube",
+      "name": "Vintage",
+      "tags": [
+        "reflective",
+        "romantic"
+      ],
+      "pillars": [
+        "culture",
+        "food"
+      ],
+      "intensity": 0.85,
+      "source": "07_Dji LUTs_Vintage.cube"
+    },
+    {
+      "file": "cinematic/film_emulation.cube",
+      "name": "Film Emulation",
+      "tags": [
+        "reflective",
+        "romantic"
+      ],
+      "pillars": [
+        "culture",
+        "food"
+      ],
+      "intensity": 0.85,
+      "source": "07_Film Emulation LUTs_Film Emulation.cube"
+    },
+    {
+      "file": "cinematic/glow_highlights.cube",
+      "name": "Glow Highlights",
+      "tags": [
+        "romantic",
+        "calm"
+      ],
+      "pillars": [
+        "food",
+        "beach",
+        "culture"
+      ],
+      "intensity": 0.85,
+      "source": "07_Vintage_LUTs_Glow Highlights.cube"
+    },
+    {
+      "file": "cinematic/green_harmony.cube",
+      "name": "Green Harmony",
+      "tags": [
+        "adventurous",
+        "calm"
+      ],
+      "pillars": [
+        "nature"
+      ],
+      "intensity": 0.85,
+      "source": "08_Dji LUTs_Green Harmony.cube"
+    },
+    {
+      "file": "cinematic/b_w_2.cube",
+      "name": "B&W",
+      "tags": [
+        "reflective",
+        "romantic"
+      ],
+      "pillars": [
+        "culture",
+        "food"
+      ],
+      "intensity": 0.85,
+      "source": "08_Film Emulation LUTs_B&W.cube"
+    },
+    {
+      "file": "cinematic/turquoise_tint.cube",
+      "name": "Turquoise Tint",
+      "tags": [
+        "calm",
+        "reflective"
+      ],
+      "pillars": [
+        "nature",
+        "beach",
+        "culture"
+      ],
+      "intensity": 0.85,
+      "source": "08_Vintage_LUTs_Turquoise Tint.cube"
+    },
+    {
+      "file": "cinematic/b_w_3.cube",
+      "name": "B&W",
+      "tags": [
+        "reflective"
+      ],
+      "pillars": [
+        "culture"
+      ],
+      "intensity": 0.85,
+      "source": "09_Dji LUTs_B&W.cube"
+    },
+    {
+      "file": "cinematic/cold_noir.cube",
+      "name": "Cold Noir",
+      "tags": [
+        "calm",
+        "reflective"
+      ],
+      "pillars": [
+        "nature",
+        "beach",
+        "culture"
+      ],
+      "intensity": 0.85,
+      "source": "09_Film Emulation LUTs_Cold Noir.cube"
+    },
+    {
+      "file": "cinematic/cold_shade.cube",
+      "name": "Cold Shade",
+      "tags": [
+        "calm",
+        "reflective"
+      ],
+      "pillars": [
+        "nature",
+        "beach",
+        "culture"
+      ],
+      "intensity": 0.85,
+      "source": "09_Vintage_LUTs_Cold Shade.cube"
+    },
+    {
+      "file": "cinematic/landscape_2.cube",
+      "name": "Landscape",
+      "tags": [
+        "adventurous",
+        "calm"
+      ],
+      "pillars": [
+        "nature"
+      ],
+      "intensity": 0.85,
+      "source": "10_Dji LUTs_Landscape.cube"
+    },
+    {
+      "file": "cinematic/vintage_city.cube",
+      "name": "Vintage City",
+      "tags": [
+        "reflective",
+        "romantic"
+      ],
+      "pillars": [
+        "culture",
+        "food",
+        "budget"
+      ],
+      "intensity": 0.85,
+      "source": "10_Film Emulation LUTs_Vintage City.cube"
+    },
+    {
+      "file": "cinematic/saturation.cube",
+      "name": "Saturation",
+      "tags": [
+        "reflective",
+        "romantic"
+      ],
+      "pillars": [
+        "culture",
+        "food"
+      ],
+      "intensity": 0.85,
+      "source": "10_Vintage_LUTs_Saturation.cube"
+    },
+    {
+      "file": "cinematic/arabica_12.cube",
+      "name": "Arabica 12",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "Arabica 12.cube"
+    },
+    {
+      "file": "cinematic/ava_614.cube",
+      "name": "Ava 614",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "Ava 614.cube"
+    },
+    {
+      "file": "cinematic/azrael_93.cube",
+      "name": "Azrael 93",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "Azrael 93.cube"
+    },
+    {
+      "file": "cinematic/bluearchitecture.cube",
+      "name": "BlueArchitecture",
+      "tags": [
+        "calm",
+        "reflective"
+      ],
+      "pillars": [
+        "nature",
+        "beach",
+        "culture"
+      ],
+      "intensity": 0.85,
+      "source": "BlueArchitecture.cube"
+    },
+    {
+      "file": "cinematic/blue_hour.cube",
+      "name": "Blue Hour",
+      "tags": [
+        "calm",
+        "reflective"
+      ],
+      "pillars": [
+        "nature",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "BlueHour.cube"
+    },
+    {
+      "file": "cinematic/bourbon_64.cube",
+      "name": "Bourbon 64",
+      "tags": [
+        "romantic",
+        "calm"
+      ],
+      "pillars": [
+        "food",
+        "beach"
+      ],
+      "intensity": 0.85,
+      "source": "Bourbon 64.cube"
+    },
+    {
+      "file": "cinematic/byers_11.cube",
+      "name": "Byers 11",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "Byers 11.cube"
+    },
+    {
+      "file": "cinematic/chemical_168.cube",
+      "name": "Chemical 168",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "Chemical 168.cube"
+    },
+    {
+      "file": "cinematic/clayton_33.cube",
+      "name": "Clayton 33",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "Clayton 33.cube"
+    },
+    {
+      "file": "cinematic/clean_raw.cube",
+      "name": "Clean Raw",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "Clean Raw.cube"
+    },
+    {
+      "file": "cinematic/clouseau_54.cube",
+      "name": "Clouseau 54",
+      "tags": [
+        "calm",
+        "reflective"
+      ],
+      "pillars": [
+        "nature",
+        "beach"
+      ],
+      "intensity": 0.85,
+      "source": "Clouseau 54.cube"
+    },
+    {
+      "file": "cinematic/cobi_3.cube",
+      "name": "Cobi 3",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "Cobi 3.cube"
+    },
+    {
+      "file": "cinematic/coldchrome.cube",
+      "name": "ColdChrome",
+      "tags": [
+        "calm",
+        "reflective"
+      ],
+      "pillars": [
+        "nature",
+        "beach"
+      ],
+      "intensity": 0.85,
+      "source": "ColdChrome.cube"
+    },
+    {
+      "file": "cinematic/contrail_35.cube",
+      "name": "Contrail 35",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "Contrail 35.cube"
+    },
+    {
+      "file": "cinematic/crispautumn.cube",
+      "name": "CrispAutumn",
+      "tags": [
+        "adventurous",
+        "calm"
+      ],
+      "pillars": [
+        "nature"
+      ],
+      "intensity": 0.85,
+      "source": "CrispAutumn.cube"
+    },
+    {
+      "file": "cinematic/cubicle_99.cube",
+      "name": "Cubicle 99",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "Cubicle 99.cube"
+    },
+    {
+      "file": "cinematic/darkandsomber.cube",
+      "name": "DarkAndSomber",
+      "tags": [
+        "calm",
+        "reflective"
+      ],
+      "pillars": [
+        "nature",
+        "beach"
+      ],
+      "intensity": 0.85,
+      "source": "DarkAndSomber.cube"
+    },
+    {
+      "file": "cinematic/django_25.cube",
+      "name": "Django 25",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "Django 25.cube"
+    },
+    {
+      "file": "cinematic/domingo_145.cube",
+      "name": "Domingo 145",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "Domingo 145.cube"
+    },
+    {
+      "file": "cinematic/faded_47.cube",
+      "name": "Faded 47",
+      "tags": [
+        "reflective",
+        "romantic"
+      ],
+      "pillars": [
+        "culture",
+        "food"
+      ],
+      "intensity": 0.85,
+      "source": "Faded 47.cube"
+    },
+    {
+      "file": "cinematic/faded_blues.cube",
+      "name": "Faded Blues",
+      "tags": [
+        "calm",
+        "reflective"
+      ],
+      "pillars": [
+        "nature",
+        "beach",
+        "culture"
+      ],
+      "intensity": 0.85,
+      "source": "Faded Blues.cube"
+    },
+    {
+      "file": "cinematic/folger_50.cube",
+      "name": "Folger 50",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "Folger 50.cube"
+    },
+    {
+      "file": "cinematic/fusion_88.cube",
+      "name": "Fusion 88",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "Fusion 88.cube"
+    },
+    {
+      "file": "cinematic/hardboost.cube",
+      "name": "HardBoost",
+      "tags": [
+        "epic",
+        "adventurous"
+      ],
+      "pillars": [
+        "hidden_gem",
+        "nature"
+      ],
+      "intensity": 0.85,
+      "source": "HardBoost.cube"
+    },
+    {
+      "file": "cinematic/hyla_68.cube",
+      "name": "Hyla 68",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "Hyla 68.cube"
+    },
+    {
+      "file": "cinematic/korben_214.cube",
+      "name": "Korben 214",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "Korben 214.cube"
+    },
+    {
+      "file": "cinematic/lenox_340.cube",
+      "name": "Lenox 340",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "Lenox 340.cube"
+    },
+    {
+      "file": "cinematic/longbeachmorning.cube",
+      "name": "LongBeachMorning",
+      "tags": [
+        "romantic",
+        "calm"
+      ],
+      "pillars": [
+        "food",
+        "beach"
+      ],
+      "intensity": 0.85,
+      "source": "LongBeachMorning.cube"
+    },
+    {
+      "file": "cinematic/lucky_64.cube",
+      "name": "Lucky 64",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "Lucky 64.cube"
+    },
+    {
+      "file": "cinematic/lush_green.cube",
+      "name": "Lush Green",
+      "tags": [
+        "calm",
+        "adventurous"
+      ],
+      "pillars": [
+        "nature"
+      ],
+      "intensity": 0.85,
+      "source": "LushGreen.cube"
+    },
+    {
+      "file": "cinematic/magic_hour.cube",
+      "name": "Magic Hour",
+      "tags": [
+        "romantic",
+        "calm"
+      ],
+      "pillars": [
+        "food",
+        "beach"
+      ],
+      "intensity": 0.85,
+      "source": "MagicHour.cube"
+    },
+    {
+      "file": "cinematic/mckinnon_75.cube",
+      "name": "McKinnon 75",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "McKinnon 75.cube"
+    },
+    {
+      "file": "cinematic/milo_5.cube",
+      "name": "Milo 5",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "Milo 5.cube"
+    },
+    {
+      "file": "cinematic/naturalboost.cube",
+      "name": "NaturalBoost",
+      "tags": [
+        "epic",
+        "adventurous"
+      ],
+      "pillars": [
+        "hidden_gem",
+        "nature"
+      ],
+      "intensity": 0.85,
+      "source": "NaturalBoost.cube"
+    },
+    {
+      "file": "cinematic/neon_770.cube",
+      "name": "Neon 770",
+      "tags": [
+        "epic",
+        "adventurous"
+      ],
+      "pillars": [
+        "hidden_gem",
+        "nature"
+      ],
+      "intensity": 0.85,
+      "source": "Neon 770.cube"
+    },
+    {
+      "file": "cinematic/orange_blue.cube",
+      "name": "Orange & Blue",
+      "tags": [
+        "epic",
+        "adventurous"
+      ],
+      "pillars": [
+        "nature",
+        "beach"
+      ],
+      "intensity": 0.85,
+      "source": "OrangeAndBlue.cube"
+    },
+    {
+      "file": "cinematic/pb_basin.cube",
+      "name": "PB Basin",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "PB_Basin.cube"
+    },
+    {
+      "file": "cinematic/pb_boulder.cube",
+      "name": "PB Boulder",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "PB_Boulder.cube"
+    },
+    {
+      "file": "cinematic/pb_butte.cube",
+      "name": "PB Butte",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "PB_Butte.cube"
+    },
+    {
+      "file": "cinematic/pb_everest.cube",
+      "name": "PB Everest",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "PB_Everest.cube"
+    },
+    {
+      "file": "cinematic/pb_hopkins.cube",
+      "name": "PB Hopkins",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "PB_Hopkins.cube"
+    },
+    {
+      "file": "cinematic/pb_lochness.cube",
+      "name": "PB LochNess",
+      "tags": [
+        "calm",
+        "reflective"
+      ],
+      "pillars": [
+        "nature",
+        "beach"
+      ],
+      "intensity": 0.85,
+      "source": "PB_LochNess.cube"
+    },
+    {
+      "file": "cinematic/pb_oaxaca.cube",
+      "name": "PB Oaxaca",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "PB_Oaxaca.cube"
+    },
+    {
+      "file": "cinematic/pb_oslo.cube",
+      "name": "PB Oslo",
+      "tags": [
+        "epic"
+      ],
+      "pillars": [
+        "culture",
+        "budget"
+      ],
+      "intensity": 0.85,
+      "source": "PB_Oslo.cube"
+    },
+    {
+      "file": "cinematic/pb_phoenix.cube",
+      "name": "PB Phoenix",
+      "tags": [
+        "epic"
+      ],
+      "pillars": [
+        "culture",
+        "budget"
+      ],
+      "intensity": 0.85,
+      "source": "PB_Phoenix.cube"
+    },
+    {
+      "file": "cinematic/pb_pocatello.cube",
+      "name": "PB Pocatello",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "PB_Pocatello.cube"
+    },
+    {
+      "file": "cinematic/pb_prague.cube",
+      "name": "PB Prague",
+      "tags": [
+        "epic"
+      ],
+      "pillars": [
+        "culture",
+        "budget"
+      ],
+      "intensity": 0.85,
+      "source": "PB_Prague.cube"
+    },
+    {
+      "file": "cinematic/pb_reykjavik.cube",
+      "name": "PB Reykjavik",
+      "tags": [
+        "epic"
+      ],
+      "pillars": [
+        "culture",
+        "budget"
+      ],
+      "intensity": 0.85,
+      "source": "PB_Reykjavik.cube"
+    },
+    {
+      "file": "cinematic/pb_santafe.cube",
+      "name": "PB SantaFe",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "PB_SantaFe.cube"
+    },
+    {
+      "file": "cinematic/pb_seattle.cube",
+      "name": "PB Seattle",
+      "tags": [
+        "calm",
+        "reflective"
+      ],
+      "pillars": [
+        "nature",
+        "beach",
+        "culture"
+      ],
+      "intensity": 0.85,
+      "source": "PB_Seattle.cube"
+    },
+    {
+      "file": "cinematic/pb_stillwater.cube",
+      "name": "PB Stillwater",
+      "tags": [
+        "calm",
+        "reflective"
+      ],
+      "pillars": [
+        "nature",
+        "beach"
+      ],
+      "intensity": 0.85,
+      "source": "PB_Stillwater.cube"
+    },
+    {
+      "file": "cinematic/pb_tahoe.cube",
+      "name": "PB Tahoe",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "PB_Tahoe.cube"
+    },
+    {
+      "file": "cinematic/pb_thames.cube",
+      "name": "PB Thames",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "PB_Thames.cube"
+    },
+    {
+      "file": "cinematic/paladin_1875.cube",
+      "name": "Paladin 1875",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "Paladin 1875.cube"
+    },
+    {
+      "file": "cinematic/pasadena_21.cube",
+      "name": "Pasadena 21",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "Pasadena 21.cube"
+    },
+    {
+      "file": "cinematic/pitaya_15.cube",
+      "name": "Pitaya 15",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "Pitaya 15.cube"
+    },
+    {
+      "file": "cinematic/reeve_38.cube",
+      "name": "Reeve 38",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "Reeve 38.cube"
+    },
+    {
+      "file": "cinematic/remy_24.cube",
+      "name": "Remy 24",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "Remy 24.cube"
+    },
+    {
+      "file": "cinematic/sharp_detail.cube",
+      "name": "Sharp Detail",
+      "tags": [
+        "epic",
+        "adventurous"
+      ],
+      "pillars": [
+        "hidden_gem",
+        "nature"
+      ],
+      "intensity": 0.85,
+      "source": "Sharp Detail.cube"
+    },
+    {
+      "file": "cinematic/softblackandwhite.cube",
+      "name": "SoftBlackAndWhite",
+      "tags": [
+        "reflective",
+        "romantic"
+      ],
+      "pillars": [
+        "culture",
+        "food"
+      ],
+      "intensity": 0.85,
+      "source": "SoftBlackAndWhite.cube"
+    },
+    {
+      "file": "cinematic/sprocket_231.cube",
+      "name": "Sprocket 231",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "Sprocket 231.cube"
+    },
+    {
+      "file": "cinematic/teigen_28.cube",
+      "name": "Teigen 28",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "Teigen 28.cube"
+    },
+    {
+      "file": "cinematic/trent_18.cube",
+      "name": "Trent 18",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "Trent 18.cube"
+    },
+    {
+      "file": "cinematic/tropic_tone.cube",
+      "name": "Tropic Tone",
+      "tags": [
+        "adventurous",
+        "calm"
+      ],
+      "pillars": [
+        "nature"
+      ],
+      "intensity": 0.85,
+      "source": "Tropic Tone.cube"
+    },
+    {
+      "file": "cinematic/tweed_71.cube",
+      "name": "Tweed 71",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "Tweed 71.cube"
+    },
+    {
+      "file": "cinematic/vireo_37.cube",
+      "name": "Vireo 37",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "Vireo 37.cube"
+    },
+    {
+      "file": "cinematic/waves.cube",
+      "name": "Waves",
+      "tags": [
+        "calm",
+        "reflective"
+      ],
+      "pillars": [
+        "nature",
+        "beach"
+      ],
+      "intensity": 0.85,
+      "source": "Waves.cube"
+    },
+    {
+      "file": "cinematic/zed_32.cube",
+      "name": "Zed 32",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "Zed 32.cube"
+    },
+    {
+      "file": "cinematic/zeke_39.cube",
+      "name": "Zeke 39",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "Zeke 39.cube"
+    },
+    {
+      "file": "cinematic/tinted_shades.cube",
+      "name": "Tinted Shades",
+      "tags": [
+        "calm",
+        "reflective"
+      ],
+      "pillars": [
+        "nature",
+        "beach",
+        "culture"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_film_luts_download_10_10_Film LUTs_Tinted Shades.cube"
+    },
+    {
+      "file": "cinematic/dusty_light.cube",
+      "name": "Dusty Light",
+      "tags": [
+        "romantic",
+        "calm"
+      ],
+      "pillars": [
+        "food",
+        "beach",
+        "culture"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_film_luts_download_1_01_Film LUTs_Dusty Light.cube"
+    },
+    {
+      "file": "cinematic/vintage_3.cube",
+      "name": "Vintage",
+      "tags": [
+        "reflective",
+        "romantic"
+      ],
+      "pillars": [
+        "culture",
+        "food"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_film_luts_download_2_02_Film LUTs_Vintage.cube"
+    },
+    {
+      "file": "cinematic/warm_light.cube",
+      "name": "Warm Light",
+      "tags": [
+        "romantic",
+        "calm"
+      ],
+      "pillars": [
+        "food",
+        "beach",
+        "culture"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_film_luts_download_3_03_Film LUTs_Warm Light.cube"
+    },
+    {
+      "file": "cinematic/city_film.cube",
+      "name": "City Film",
+      "tags": [
+        "reflective",
+        "romantic"
+      ],
+      "pillars": [
+        "culture",
+        "food",
+        "budget"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_film_luts_download_4_04_Film LUTs_City Film.cube"
+    },
+    {
+      "file": "cinematic/foliage.cube",
+      "name": "Foliage",
+      "tags": [
+        "reflective",
+        "romantic"
+      ],
+      "pillars": [
+        "culture",
+        "food",
+        "nature"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_film_luts_download_5_05_Film LUTs_Foliage.cube"
+    },
+    {
+      "file": "cinematic/retro_frame.cube",
+      "name": "Retro Frame",
+      "tags": [
+        "reflective",
+        "romantic"
+      ],
+      "pillars": [
+        "culture",
+        "food"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_film_luts_download_6_06_Film LUTs_Retro Frame.cube"
+    },
+    {
+      "file": "cinematic/fade_look.cube",
+      "name": "Fade.look",
+      "tags": [
+        "reflective",
+        "romantic"
+      ],
+      "pillars": [
+        "culture",
+        "food"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_film_luts_download_7_07_Film LUTs_Fade.look.cube"
+    },
+    {
+      "file": "cinematic/blue_night.cube",
+      "name": "Blue Night",
+      "tags": [
+        "calm",
+        "reflective"
+      ],
+      "pillars": [
+        "nature",
+        "beach",
+        "culture"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_film_luts_download_8_08_Film LUTs_Blue Night.cube"
+    },
+    {
+      "file": "cinematic/w_b.cube",
+      "name": "W&B",
+      "tags": [
+        "reflective",
+        "romantic"
+      ],
+      "pillars": [
+        "culture",
+        "food"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_film_luts_download_9_09_Film LUTs_W&B.cube"
+    },
+    {
+      "file": "cinematic/wipe.cube",
+      "name": "Wipe",
+      "tags": [
+        "epic",
+        "adventurous"
+      ],
+      "pillars": [
+        "hidden_gem",
+        "nature"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_free_cinematic_luts_download_10_10_Cinematic LUTs_Wipe.cube"
+    },
+    {
+      "file": "cinematic/shine.cube",
+      "name": "Shine",
+      "tags": [
+        "epic",
+        "adventurous"
+      ],
+      "pillars": [
+        "hidden_gem",
+        "nature"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_free_cinematic_luts_download_1_01_Cinematic LUTs_Shine.cube"
+    },
+    {
+      "file": "cinematic/matte_4.cube",
+      "name": "Matte",
+      "tags": [
+        "reflective",
+        "romantic"
+      ],
+      "pillars": [
+        "culture",
+        "food",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_free_cinematic_luts_download_2_02_Cinematic LUTs_Matte.cube"
+    },
+    {
+      "file": "cinematic/deep.cube",
+      "name": "Deep",
+      "tags": [
+        "epic",
+        "adventurous"
+      ],
+      "pillars": [
+        "hidden_gem",
+        "nature"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_free_cinematic_luts_download_3_03_Cinematic LUTs_Deep.cube"
+    },
+    {
+      "file": "cinematic/frosted.cube",
+      "name": "Frosted",
+      "tags": [
+        "calm",
+        "reflective"
+      ],
+      "pillars": [
+        "nature",
+        "beach",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_free_cinematic_luts_download_4_04_Cinematic LUTs_Frosted.cube"
+    },
+    {
+      "file": "cinematic/dimension.cube",
+      "name": "Dimension",
+      "tags": [
+        "epic",
+        "adventurous"
+      ],
+      "pillars": [
+        "hidden_gem",
+        "nature"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_free_cinematic_luts_download_5_05_Cinematic LUTs_Dimension.cube"
+    },
+    {
+      "file": "cinematic/enchanted.cube",
+      "name": "Enchanted",
+      "tags": [
+        "epic",
+        "adventurous"
+      ],
+      "pillars": [
+        "hidden_gem",
+        "nature"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_free_cinematic_luts_download_6_06_Cinematic LUTs_Enchanted.cube"
+    },
+    {
+      "file": "cinematic/flavin.cube",
+      "name": "Flavin",
+      "tags": [
+        "epic",
+        "adventurous"
+      ],
+      "pillars": [
+        "hidden_gem",
+        "nature"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_free_cinematic_luts_download_7_07_Cinematic LUTs_Flavin.cube"
+    },
+    {
+      "file": "cinematic/evolution.cube",
+      "name": "Evolution",
+      "tags": [
+        "epic",
+        "adventurous"
+      ],
+      "pillars": [
+        "hidden_gem",
+        "nature"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_free_cinematic_luts_download_8_08_Cinematic LUTs_Evolution.cube"
+    },
+    {
+      "file": "cinematic/ultra_water.cube",
+      "name": "Ultra Water",
+      "tags": [
+        "calm",
+        "reflective"
+      ],
+      "pillars": [
+        "nature",
+        "beach",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_free_cinematic_luts_download_9_09_Cinematic LUTs_Ultra Water.cube"
+    },
+    {
+      "file": "cinematic/color_matte.cube",
+      "name": "Color Matte",
+      "tags": [
+        "reflective",
+        "romantic"
+      ],
+      "pillars": [
+        "culture",
+        "food"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_ground_control_luts_download_10_10_Ground Control LUTs_Color Matte.cube"
+    },
+    {
+      "file": "cinematic/twilight_2.cube",
+      "name": "Twilight",
+      "tags": [
+        "romantic",
+        "calm"
+      ],
+      "pillars": [
+        "beach",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_ground_control_luts_download_1_01_Ground Control LUTs_Twilight.cube"
+    },
+    {
+      "file": "cinematic/frosty_2.cube",
+      "name": "Frosty",
+      "tags": [
+        "calm",
+        "reflective"
+      ],
+      "pillars": [
+        "nature"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_ground_control_luts_download_2_02_Ground Control LUTs_Frosty.cube"
+    },
+    {
+      "file": "cinematic/pastel_film_2.cube",
+      "name": "Pastel Film",
+      "tags": [
+        "romantic",
+        "fun"
+      ],
+      "pillars": [
+        "culture",
+        "food"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_ground_control_luts_download_3_03_Ground Control LUTs_Pastel Film.cube"
+    },
+    {
+      "file": "cinematic/contrast_2.cube",
+      "name": "Contrast",
+      "tags": [
+        "epic",
+        "adventurous"
+      ],
+      "pillars": [
+        "hidden_gem",
+        "nature"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_ground_control_luts_download_4_04_Ground Control LUTs_Contrast.cube"
+    },
+    {
+      "file": "cinematic/green_cast_2.cube",
+      "name": "Green Cast",
+      "tags": [
+        "adventurous",
+        "calm"
+      ],
+      "pillars": [
+        "nature"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_ground_control_luts_download_5_05_Ground Control LUTs_Green Cast.cube"
+    },
+    {
+      "file": "cinematic/soft_haze.cube",
+      "name": "Soft Haze",
+      "tags": [
+        "reflective",
+        "romantic"
+      ],
+      "pillars": [
+        "culture",
+        "food"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_ground_control_luts_download_6_06_Ground Control LUTs_Soft Haze.cube"
+    },
+    {
+      "file": "cinematic/dodge_lighten.cube",
+      "name": "Dodge-Lighten",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_ground_control_luts_download_7_07_Ground Control LUTs_Dodge-Lighten.cube"
+    },
+    {
+      "file": "cinematic/tint_shadows.cube",
+      "name": "Tint Shadows",
+      "tags": [
+        "reflective",
+        "romantic"
+      ],
+      "pillars": [
+        "culture",
+        "food"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_ground_control_luts_download_8_08_Ground Control LUTs_Tint Shadows.cube"
+    },
+    {
+      "file": "cinematic/purple_sky.cube",
+      "name": "Purple Sky",
+      "tags": [
+        "calm",
+        "reflective"
+      ],
+      "pillars": [
+        "nature",
+        "beach"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_ground_control_luts_download_9_09_Ground Control LUTs_Purple Sky.cube"
+    },
+    {
+      "file": "cinematic/antique.cube",
+      "name": "Antique",
+      "tags": [
+        "reflective",
+        "romantic"
+      ],
+      "pillars": [
+        "culture",
+        "food"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_lut_color_grading_download_10_10_Color Grading LUTs_Antique.cube"
+    },
+    {
+      "file": "cinematic/pink_grade.cube",
+      "name": "Pink Grade",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_lut_color_grading_download_1_01_Color Grading LUTs_Pink Grade.cube"
+    },
+    {
+      "file": "cinematic/vibrant_light.cube",
+      "name": "Vibrant Light",
+      "tags": [
+        "epic",
+        "adventurous"
+      ],
+      "pillars": [
+        "hidden_gem",
+        "nature"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_lut_color_grading_download_2_02_Color Grading LUTs_Vibrant Light.cube"
+    },
+    {
+      "file": "cinematic/sea.cube",
+      "name": "Sea",
+      "tags": [
+        "calm",
+        "reflective"
+      ],
+      "pillars": [
+        "nature",
+        "beach"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_lut_color_grading_download_3_03_Color Grading LUTs_Sea.cube"
+    },
+    {
+      "file": "cinematic/landscape_3.cube",
+      "name": "Landscape",
+      "tags": [
+        "adventurous",
+        "calm"
+      ],
+      "pillars": [
+        "nature"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_lut_color_grading_download_4_04_Color Grading LUTs_Landscape.cube"
+    },
+    {
+      "file": "cinematic/chill_out.cube",
+      "name": "Chill Out",
+      "tags": [
+        "calm",
+        "reflective"
+      ],
+      "pillars": [
+        "nature",
+        "beach"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_lut_color_grading_download_5_05_Color Grading LUTs_Chill Out.cube"
+    },
+    {
+      "file": "cinematic/moment.cube",
+      "name": "Moment",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_lut_color_grading_download_6_06_Color Grading LUTs_Moment.cube"
+    },
+    {
+      "file": "cinematic/reflection.cube",
+      "name": "Reflection",
+      "tags": [
+        "calm",
+        "reflective"
+      ],
+      "pillars": [
+        "nature",
+        "beach"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_lut_color_grading_download_7_07_Color Grading LUTs_Reflection.cube"
+    },
+    {
+      "file": "cinematic/pastel.cube",
+      "name": "Pastel",
+      "tags": [
+        "reflective",
+        "romantic"
+      ],
+      "pillars": [
+        "culture",
+        "food"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_lut_color_grading_download_8_08_Color Grading LUTs_Pastel.cube"
+    },
+    {
+      "file": "cinematic/dingy.cube",
+      "name": "Dingy",
+      "tags": [
+        "reflective",
+        "calm"
+      ],
+      "pillars": [
+        "culture",
+        "hidden_gem"
+      ],
+      "intensity": 0.85,
+      "source": "ftp_lut_color_grading_download_9_09_Color Grading LUTs_Dingy.cube"
+    }
+  ]
+}

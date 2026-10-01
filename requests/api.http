@@ -1,0 +1,98 @@
+### Travel Content System — manual API smoke test collection
+### Use with VS Code "REST Client" or JetBrains HTTP Client.
+### Set @baseUrl + @token below, then click "Send Request" above each block.
+### Goal: every request returns a sane status (200/4xx) — never a 500.
+
+@baseUrl = http://localhost:8000
+@token = dev-bypass-token
+
+### ── health ──────────────────────────────────────────────────────────────
+GET {{baseUrl}}/api/health
+
+### ── media ───────────────────────────────────────────────────────────────
+GET {{baseUrl}}/api/media?limit=5
+Authorization: Bearer {{token}}
+
+### media: unknown id → expect 404 (NOT 500 — regression guard for .single())
+GET {{baseUrl}}/api/media/does-not-exist-00000000
+Authorization: Bearer {{token}}
+
+### ── posts ───────────────────────────────────────────────────────────────
+GET {{baseUrl}}/api/posts?limit=10&sort=scheduled_desc
+Authorization: Bearer {{token}}
+
+### posts: reject unknown id → expect 404 (regression guard for v0.9.5 500)
+POST {{baseUrl}}/api/posts/does-not-exist-00000000/reject
+Authorization: Bearer {{token}}
+
+### posts: approve unknown id → expect 404
+POST {{baseUrl}}/api/posts/does-not-exist-00000000/approve
+Authorization: Bearer {{token}}
+
+### posts: publish unknown id → expect 404
+POST {{baseUrl}}/api/posts/does-not-exist-00000000/publish
+Authorization: Bearer {{token}}
+
+### posts: cancel unknown id → expect 404
+POST {{baseUrl}}/api/posts/does-not-exist-00000000/cancel
+Authorization: Bearer {{token}}
+
+### posts: retry-youtube unknown id → expect 404
+POST {{baseUrl}}/api/posts/does-not-exist-00000000/retry-youtube
+Authorization: Bearer {{token}}
+
+### posts: reschedule
+POST {{baseUrl}}/api/posts/does-not-exist-00000000/reschedule
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{ "scheduled_at": "2027-01-01T09:00:00+00:00", "window_minutes": 60 }
+
+### posts: create from filter (story) → 200 pipeline_started, or 404 if none
+POST {{baseUrl}}/api/posts/create
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{ "strategy": "story" }
+
+### posts: create best with missing fields → expect 400
+POST {{baseUrl}}/api/posts/create
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{ "strategy": "best", "country": "Japan" }
+
+### ── pipeline ────────────────────────────────────────────────────────────
+GET {{baseUrl}}/api/pipeline/runs
+Authorization: Bearer {{token}}
+
+### pipeline: unknown stage → expect 400
+POST {{baseUrl}}/api/pipeline/not-a-real-stage
+Authorization: Bearer {{token}}
+
+### ── assets (LUT + intro/outro browsers) ─────────────────────────────────
+GET {{baseUrl}}/api/assets/luts
+Authorization: Bearer {{token}}
+
+GET {{baseUrl}}/api/assets/intros
+Authorization: Bearer {{token}}
+
+GET {{baseUrl}}/api/assets/outros
+Authorization: Bearer {{token}}
+
+### ── settings / taxonomy / analytics ─────────────────────────────────────
+GET {{baseUrl}}/api/settings
+Authorization: Bearer {{token}}
+
+GET {{baseUrl}}/api/taxonomy/countries
+Authorization: Bearer {{token}}
+
+GET {{baseUrl}}/api/analytics/overview
+Authorization: Bearer {{token}}
+
+### ── notifications ───────────────────────────────────────────────────────
+GET {{baseUrl}}/api/notifications
+Authorization: Bearer {{token}}
+
+GET {{baseUrl}}/api/notifications/token-status
+Authorization: Bearer {{token}}

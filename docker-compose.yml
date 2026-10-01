@@ -1,0 +1,49 @@
+services:
+  api:
+    image: ghcr.io/${GHCR_OWNER}/social-media-cms:${IMAGE_TAG:-latest}
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      - ENV=prod
+      # Reach the local Moondream runtime over the compose network (Enh E).
+      - OLLAMA_URL=http://ollama:11434
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - /srv/social-media-cms/data:/app/downloads
+      - /srv/social-media-cms/db:/app/db
+      - /srv/social-media-cms/assets:/app/assets
+      - /srv/social-media-cms/reels:/app/reels_ready
+      - /srv/social-media-cms/logs:/app/logs
+    # Hard caps — renders must not starve the neighbor project.
+    mem_limit: 4g
+    cpus: "2.5"
+    # curl is not in the slim Python image — use the bundled interpreter instead.
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://localhost:8000/api/health', timeout=4).status==200 else 1)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+
+  # Local vision runtime for Enhancement E (nightly hook-scoring fallback).
+  # Idle ~0 CPU; only works during the 03:00 cron batch. Hard-capped so it can
+  # never starve the api or the neighbor project. Adjust cpus/mem to host headroom.
+  ollama:
+    image: ollama/ollama:latest
+    restart: unless-stopped
+    # Not published to the host — only the api container talks to it.
+    expose:
+      - "11434"
+    volumes:
+      - /srv/social-media-cms/ollama:/root/.ollama
+    environment:
+      # Keep the model loaded briefly, single-threaded-ish to stay gentle.
+      - OLLAMA_KEEP_ALIVE=10m
+      - OLLAMA_NUM_PARALLEL=1
+    mem_limit: 3g
+    cpus: "2.0"
+
+networks:
+  default:
+    name: social-media-cms-net

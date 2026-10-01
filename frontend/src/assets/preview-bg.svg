@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1600" width="900" height="1600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a3a5c"/>
+      <stop offset="60%" stop-color="#2d6a9f"/>
+      <stop offset="100%" stop-color="#87ceeb"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a7c59"/>
+      <stop offset="100%" stop-color="#2d5a3d"/>
+    </linearGradient>
+  </defs>
+  <!-- Sky -->
+  <rect width="900" height="1100" fill="url(#sky)"/>
+  <!-- Ground -->
+  <rect y="1100" width="900" height="500" fill="url(#ground)"/>
+  <!-- Sun/moon glow -->
+  <circle cx="650" cy="300" r="80" fill="#fff8dc" opacity="0.3"/>
+  <!-- Mountains -->
+  <polygon points="0,1100 200,700 400,1100" fill="#1a3028" opacity="0.8"/>
+  <polygon points="300,1100 550,600 800,1100" fill="#243830" opacity="0.9"/>
+  <polygon points="600,1100 780,750 900,1100" fill="#1a2820" opacity="0.85"/>
+  <!-- Horizon mist -->
+  <rect y="1050" width="900" height="80" fill="#87ceeb" opacity="0.15"/>
+</svg>

@@ -1,0 +1,27 @@
+{
+  "name": "nature_reel",
+  "intro": {
+    "text": "{hook_text}",
+    "duration": 2,
+    "transition": "fade",
+    "font_size": 64
+  },
+  "body": {
+    "ken_burns": true,
+    "location_text": "{city}, {country}",
+    "location_duration": 3
+  },
+  "outro": {
+    "text": "Tag someone who needs this escape 🌿",
+    "duration": 2,
+    "transition": "fade",
+    "font_size": 48
+  },
+  "audio": {
+    "genre": "ambient",
+    "mood": "peaceful",
+    "volume": 0.13,
+    "fade_out": 3
+  },
+  "lut": "warm.cube"
+}

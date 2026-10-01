@@ -1,0 +1,111 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.env.development
+.env.production
+
+.env
+content.db
+downloads/organized
+downloads/organized/*
+downloads/highlights
+downloads/posts
+downloads/instagram-metadata
+reels_ready/
+
+logs/
+__pycache__/
+*.pyc
+
+# Monorepo
+node_modules/
+dist/
+.remotion/
+assets/music/*.mp3
+assets/music/**/*.mp3
+!assets/music/**/.gitkeep
+# Raw vendor LUT downloads (staging only) — curated cubes go to assets/luts/cinematic/
+assets/cubes/
+frontend/node_modules/
+remotion/node_modules/
+
+*.DS_Store
+
+.venv
+.venv/*
+
+
+# api keys
+.env*
+.env.local
+.env.production
+.env.development
+!.env.example
+
+
+# build directory
+/build
+build*
+
+# vite / typescript build artifacts
+*.tsbuildinfo
+.vite/
+
+.vercel
+
+
+tests_frontend/test-results/*
+tests_frontend/playwright-report/*
+.playwright-mcp/*
+
+tests_frontend/** 
+
+.claude/scheduled_tasks.lock
+
+.playwright-cli/
+
+OpenMontage/
+# Generated 2D LUT strips for the editor colour preview
+# (rebuild with `python -m backend.scripts.make_lut_previews`)
+assets/luts/_preview/
+# User-uploaded editor stickers — the dir ships empty, the library is per-install
+assets/stickers/*
+!assets/stickers/.gitkeep
+
+# Public-release hygiene
+!.env.example
+supabase/.temp/
+.claude/
+.agents/
+.cursor/
+skills-lock.json
+# Model weights (fetched by backend/scripts/setup_decaption.py)
+assets/models/
+# Third-party LUT packs + music cache — bring your own (see README)
+assets/luts/cinematic/
+assets/luts/_preview/
+assets/music/cache.json
+
+# Local agent instructions (personal, not committed)
+CLAUDE.local.md

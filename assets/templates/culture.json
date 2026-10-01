@@ -1,0 +1,27 @@
+{
+  "name": "culture_reel",
+  "intro": {
+    "text": "{hook_text}",
+    "duration": 3,
+    "transition": "fade",
+    "font_size": 64
+  },
+  "body": {
+    "ken_burns": true,
+    "location_text": "{city}, {country}",
+    "location_duration": 4
+  },
+  "outro": {
+    "text": "Share this with someone who loves culture",
+    "duration": 2,
+    "transition": "fade",
+    "font_size": 44
+  },
+  "audio": {
+    "genre": "cinematic",
+    "mood": "epic",
+    "volume": 0.12,
+    "fade_out": 3
+  },
+  "lut": "vintage.cube"
+}

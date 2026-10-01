@@ -1,0 +1,136 @@
+name: Backend — Release to VPS
+
+on:
+  push:
+    tags:
+      - "v[0-9]+.[0-9]+.[0-9]+"
+
+# Gate: tag must originate from a release/* branch.
+# The check below reads the tag's base ref from the push event.
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    outputs:
+      proceed: ${{ steps.check.outputs.proceed }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Verify tag is on a release branch
+        id: check
+        run: |
+          if git branch -r --contains HEAD | grep -q 'origin/release/'; then
+            echo "proceed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Tag ${{ github.ref_name }} not on a release/* branch. Skipping."
+            echo "proceed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+  test:
+    needs: guard
+    if: needs.guard.outputs.proceed == 'true'
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run tests
+        run: pytest tests/ -v --ignore=tests/test_merge_golden.py
+        env:
+          SUPABASE_URL: ""
+          SUPABASE_JWT_SECRET: ""
+          SUPABASE_KEY: ""
+          SUPABASE_SERVICE_KEY: ""
+          IG_TOKEN: "ci-test-token"
+          IG_USER_ID: "000000"
+
+  build-and-deploy:
+    needs: [guard, test]
+    if: needs.guard.outputs.proceed == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Log in to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build and push image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: true
+          tags: |
+            ghcr.io/${{ github.repository_owner }}/social-media-cms:${{ github.ref_name }}
+            ghcr.io/${{ github.repository_owner }}/social-media-cms:latest
+          build-args: |
+            GIT_COMMIT=${{ github.sha }}
+            GIT_BRANCH=${{ github.ref_name }}
+            GIT_TAG=${{ github.ref_name }}
+            BUILD_TIME=${{ github.event.head_commit.timestamp }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Copy deploy files to the VPS
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "docker-compose.yml,deploy/"
+          target: /srv/social-media-cms
+          strip_components: 0
+
+      # Old-image cleanup is handled inside deploy.sh *after* the new container
+      # is healthy — pruning here (pre-deploy) can't remove the in-use previous
+      # version and would orphan it on disk.
+
+      - name: Deploy to the VPS
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          envs: GHCR_TOKEN
+          script: |
+            echo "$GHCR_TOKEN" | docker login ghcr.io -u ${{ github.repository_owner }} --password-stdin
+            export GHCR_OWNER=${{ github.repository_owner }}
+            cd /srv/social-media-cms
+            bash deploy/deploy.sh ${{ github.ref_name }}
+        env:
+          GHCR_TOKEN: ${{ secrets.GHCR_TOKEN }}
+
+      - name: Notify Telegram on success
+        if: success()
+        run: |
+          curl -s -X POST \
+            "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+            -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
+            -d text="✅ social-media-cms ${{ github.ref_name }} deployed successfully"
+
+      - name: Notify Telegram on failure
+        if: failure()
+        run: |
+          curl -s -X POST \
+            "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+            -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
+            -d text="❌ social-media-cms ${{ github.ref_name }} deploy FAILED — rolled back"

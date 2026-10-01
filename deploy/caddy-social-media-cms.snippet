@@ -1,0 +1,23 @@
+# Append this block to the host Caddyfile.
+# Replace social-media-cms.yourdomain.com with your actual domain.
+# Caddy handles TLS automatically.
+
+social-media-cms.yourdomain.com {
+    # Telegram webhook — no auth, Telegram pushes here
+    handle /api/telegram/webhook/* {
+        reverse_proxy localhost:8000
+    }
+
+    # WebSocket upgrade for live pipeline events
+    handle /ws/* {
+        reverse_proxy localhost:8000 {
+            header_up Connection "Upgrade"
+            header_up Upgrade {http.request.header.Upgrade}
+        }
+    }
+
+    # All other API + static
+    handle {
+        reverse_proxy localhost:8000
+    }
+}

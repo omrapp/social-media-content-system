@@ -1,0 +1,334 @@
+[
+  {
+    "argv": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-show_entries",
+      "format=duration",
+      "-of",
+      "default=noprint_wrappers=1:nokey=1",
+      "<ROOT>/tests/fixtures/clips/media/bright_motion.mp4"
+    ],
+    "cwd": null
+  },
+  {
+    "argv": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-show_entries",
+      "format=duration",
+      "-of",
+      "default=noprint_wrappers=1:nokey=1",
+      "<ROOT>/tests/fixtures/clips/media/static_bars.mp4"
+    ],
+    "cwd": null
+  },
+  {
+    "argv": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-show_entries",
+      "format=duration",
+      "-of",
+      "default=noprint_wrappers=1:nokey=1",
+      "<ROOT>/tests/fixtures/clips/media/detail_slow.mp4"
+    ],
+    "cwd": null
+  },
+  {
+    "argv": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-show_entries",
+      "format=duration",
+      "-of",
+      "default=noprint_wrappers=1:nokey=1",
+      "<ROOT>/tests/fixtures/clips/media/dark_soft.mp4"
+    ],
+    "cwd": null
+  },
+  {
+    "argv": [
+      "ffmpeg",
+      "-hide_banner",
+      "-ss",
+      "0.000",
+      "-t",
+      "7.908",
+      "-i",
+      "<ROOT>/tests/fixtures/clips/media/detail_slow.mp4",
+      "-vf",
+      "deblock=filter=strong:block=8,crop='min(iw,ih*9/16)':'min(ih,iw*16/9)',scale=1080:1920:flags=lanczos,setsar=1,fps=30,colorchannelmixer=rr=1.019:gg=0.926:bb=1.066",
+      "-an",
+      "-c:v",
+      "libx264",
+      "-preset",
+      "ultrafast",
+      "-crf",
+      "18",
+      "-movflags",
+      "+faststart",
+      "-y",
+      "<ROOT>/reels_ready/merge_golden/06_no_grade/<MERGE_ID>/seg_00.mp4"
+    ],
+    "cwd": null
+  },
+  {
+    "argv": [
+      "ffmpeg",
+      "-hide_banner",
+      "-ss",
+      "0.000",
+      "-t",
+      "7.908",
+      "-i",
+      "<ROOT>/tests/fixtures/clips/media/static_bars.mp4",
+      "-vf",
+      "deblock=filter=strong:block=8,crop='min(iw,ih*9/16)':'min(ih,iw*16/9)',scale=1080:1920:flags=lanczos,setsar=1,fps=30,colorchannelmixer=rr=1.036:gg=1.042:bb=0.930",
+      "-an",
+      "-c:v",
+      "libx264",
+      "-preset",
+      "ultrafast",
+      "-crf",
+      "18",
+      "-movflags",
+      "+faststart",
+      "-y",
+      "<ROOT>/reels_ready/merge_golden/06_no_grade/<MERGE_ID>/seg_01.mp4"
+    ],
+    "cwd": null
+  },
+  {
+    "argv": [
+      "ffmpeg",
+      "-hide_banner",
+      "-ss",
+      "4.092",
+      "-t",
+      "7.908",
+      "-i",
+      "<ROOT>/tests/fixtures/clips/media/bright_motion.mp4",
+      "-vf",
+      "deblock=filter=strong:block=8,crop='min(iw,ih*9/16)':'min(ih,iw*16/9)',scale=1080:1920:flags=lanczos,setsar=1,fps=30,colorchannelmixer=rr=1.040:gg=0.994:bb=0.968",
+      "-an",
+      "-c:v",
+      "libx264",
+      "-preset",
+      "ultrafast",
+      "-crf",
+      "18",
+      "-movflags",
+      "+faststart",
+      "-y",
+      "<ROOT>/reels_ready/merge_golden/06_no_grade/<MERGE_ID>/seg_02.mp4"
+    ],
+    "cwd": null
+  },
+  {
+    "argv": [
+      "ffmpeg",
+      "-hide_banner",
+      "-ss",
+      "4.092",
+      "-t",
+      "7.908",
+      "-i",
+      "<ROOT>/tests/fixtures/clips/media/dark_soft.mp4",
+      "-vf",
+      "deblock=filter=strong:block=8,hqdn3d=2:1.5:3:3,crop='min(iw,ih*9/16)':'min(ih,iw*16/9)',scale=1080:1920:flags=lanczos,setsar=1,fps=30,colorchannelmixer=rr=1.078:gg=1.062:bb=0.884,cas=0.40",
+      "-an",
+      "-c:v",
+      "libx264",
+      "-preset",
+      "ultrafast",
+      "-crf",
+      "18",
+      "-movflags",
+      "+faststart",
+      "-y",
+      "<ROOT>/reels_ready/merge_golden/06_no_grade/<MERGE_ID>/seg_03.mp4"
+    ],
+    "cwd": null
+  },
+  {
+    "argv": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-show_entries",
+      "format=duration",
+      "-of",
+      "default=noprint_wrappers=1:nokey=1",
+      "<ROOT>/reels_ready/merge_golden/06_no_grade/<MERGE_ID>/seg_00.mp4"
+    ],
+    "cwd": null
+  },
+  {
+    "argv": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-show_entries",
+      "format=duration",
+      "-of",
+      "default=noprint_wrappers=1:nokey=1",
+      "<ROOT>/reels_ready/merge_golden/06_no_grade/<MERGE_ID>/seg_01.mp4"
+    ],
+    "cwd": null
+  },
+  {
+    "argv": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-show_entries",
+      "format=duration",
+      "-of",
+      "default=noprint_wrappers=1:nokey=1",
+      "<ROOT>/reels_ready/merge_golden/06_no_grade/<MERGE_ID>/seg_02.mp4"
+    ],
+    "cwd": null
+  },
+  {
+    "argv": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-show_entries",
+      "format=duration",
+      "-of",
+      "default=noprint_wrappers=1:nokey=1",
+      "<ROOT>/reels_ready/merge_golden/06_no_grade/<MERGE_ID>/seg_03.mp4"
+    ],
+    "cwd": null
+  },
+  {
+    "argv": [
+      "ffmpeg",
+      "-hide_banner",
+      "-i",
+      "<ROOT>/reels_ready/merge_golden/06_no_grade/<MERGE_ID>/seg_01.mp4",
+      "-vf",
+      "setpts=1.1765*PTS,trim=duration=7.933,setpts=PTS-STARTPTS,zoompan=z='1.10-0.10*(3*pow((on/238),2)-2*pow((on/238),3))':d=1:x='iw/2-(iw/zoom/2)+(iw*0.04*on/238)':y='ih/2-(ih/zoom/2)':s=1080x1920:fps=30,settb=1/30,format=yuv420p",
+      "-an",
+      "-c:v",
+      "libx264",
+      "-preset",
+      "veryfast",
+      "-crf",
+      "16",
+      "-pix_fmt",
+      "yuv420p",
+      "-threads",
+      "2",
+      "-y",
+      "<ROOT>/reels_ready/merge_golden/06_no_grade/<MERGE_ID>/segfx_01.mp4"
+    ],
+    "cwd": null
+  },
+  {
+    "argv": [
+      "ffmpeg",
+      "-hide_banner",
+      "-i",
+      "<ROOT>/reels_ready/merge_golden/06_no_grade/<MERGE_ID>/seg_02.mp4",
+      "-vf",
+      "setpts=1.1765*PTS,trim=duration=7.900,setpts=PTS-STARTPTS,zoompan=z='1+0.10*(3*pow((on/237),2)-2*pow((on/237),3))':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1080x1920:fps=30,settb=1/30,format=yuv420p",
+      "-an",
+      "-c:v",
+      "libx264",
+      "-preset",
+      "veryfast",
+      "-crf",
+      "16",
+      "-pix_fmt",
+      "yuv420p",
+      "-threads",
+      "2",
+      "-y",
+      "<ROOT>/reels_ready/merge_golden/06_no_grade/<MERGE_ID>/segfx_02.mp4"
+    ],
+    "cwd": null
+  },
+  {
+    "argv": [
+      "ffmpeg",
+      "-hide_banner",
+      "-i",
+      "<ROOT>/reels_ready/merge_golden/06_no_grade/<MERGE_ID>/seg_03.mp4",
+      "-vf",
+      "setpts=1.1765*PTS,trim=duration=7.900,setpts=PTS-STARTPTS,zoompan=z='1.10-0.10*(3*pow((on/237),2)-2*pow((on/237),3))':d=1:x='iw/2-(iw/zoom/2)-(iw*0.04*on/237)':y='ih/2-(ih/zoom/2)':s=1080x1920:fps=30,settb=1/30,format=yuv420p",
+      "-an",
+      "-c:v",
+      "libx264",
+      "-preset",
+      "veryfast",
+      "-crf",
+      "16",
+      "-pix_fmt",
+      "yuv420p",
+      "-threads",
+      "2",
+      "-y",
+      "<ROOT>/reels_ready/merge_golden/06_no_grade/<MERGE_ID>/segfx_03.mp4"
+    ],
+    "cwd": null
+  },
+  {
+    "argv": [
+      "ffmpeg",
+      "-hide_banner",
+      "-i",
+      "<ROOT>/reels_ready/merge_golden/06_no_grade/<MERGE_ID>/seg_00.mp4",
+      "-i",
+      "<ROOT>/reels_ready/merge_golden/06_no_grade/<MERGE_ID>/segfx_01.mp4",
+      "-i",
+      "<ROOT>/reels_ready/merge_golden/06_no_grade/<MERGE_ID>/segfx_02.mp4",
+      "-i",
+      "<ROOT>/reels_ready/merge_golden/06_no_grade/<MERGE_ID>/segfx_03.mp4",
+      "-stream_loop",
+      "-1",
+      "-ss",
+      "2.500",
+      "-i",
+      "<ROOT>/tests/fixtures/clips/music/golden_bed.m4a",
+      "-filter_complex",
+      "[0:v]null,settb=1/30[v0];[1:v]null,settb=1/30[v1];[2:v]null,settb=1/30[v2];[3:v]null,settb=1/30[v3];[v0][v1]xfade=transition=fade:duration=0.5:offset=7.433[x1];[x1][v2]xfade=transition=dissolve:duration=0.5:offset=14.867[x2];[x2][v3]xfade=transition=slideup:duration=0.033:offset=22.734[vout];[4:a]atrim=0:30.634,asetpts=PTS-STARTPTS,afade=t=in:st=0:d=1.00,afade=t=out:st=29.634:d=1.00[aout]",
+      "-filter_complex_threads",
+      "2",
+      "-filter_threads",
+      "2",
+      "-map",
+      "[vout]",
+      "-map",
+      "[aout]",
+      "-c:v",
+      "libx264",
+      "-preset",
+      "medium",
+      "-crf",
+      "20",
+      "-threads",
+      "2",
+      "-pix_fmt",
+      "yuv420p",
+      "-c:a",
+      "aac",
+      "-b:a",
+      "192k",
+      "-t",
+      "30.634",
+      "-shortest",
+      "-movflags",
+      "+faststart",
+      "-y",
+      "<ROOT>/reels_ready/merge_golden/06_no_grade/<MERGE_ID>.mp4"
+    ],
+    "cwd": null
+  }
+]

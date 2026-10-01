@@ -1,0 +1,91 @@
+name: Frontend — Release to Vercel
+
+on:
+  push:
+    tags:
+      - "fe-v[0-9]+.[0-9]+.[0-9]+"
+
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    outputs:
+      proceed: ${{ steps.check.outputs.proceed }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Verify tag is on a release branch
+        id: check
+        run: |
+          if git branch -r --contains HEAD | grep -q 'origin/release/'; then
+            echo "proceed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Tag ${{ github.ref_name }} not on a release/* branch. Skipping."
+            echo "proceed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+  deploy:
+    needs: guard
+    if: needs.guard.outputs.proceed == 'true'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install dependencies
+        run: npm install --no-save
+
+      - name: Type check
+        run: npx tsc --noEmit
+
+      - name: Build
+        # Env vars baked into bundle here — Vercel never sees them
+        run: npm run build
+        env:
+          VITE_API_BASE_URL: ${{ secrets.VITE_API_BASE_URL }}
+          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
+
+      - name: Prepare Vercel prebuilt output
+        # Creates .vercel/output from dist/ — SPA fallback rewrite + asset cache headers
+        run: |
+          mkdir -p .vercel/output/static
+          cp -r dist/. .vercel/output/static/
+          printf '%s' '{"version":3,"routes":[{"src":"/assets/(.*)","headers":{"Cache-Control":"public, max-age=31536000, immutable"},"continue":true},{"handle":"filesystem"},{"src":"/(.*)","dest":"/index.html"}]}' \
+            > .vercel/output/config.json
+
+      - name: Deploy to Vercel (prebuilt — no Vercel build, no dashboard env vars needed)
+        run: |
+          npm install -g vercel
+          vercel pull --yes --token=$VERCEL_TOKEN
+          vercel deploy --prebuilt --prod --token=$VERCEL_TOKEN
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+
+      - name: Notify Telegram on success
+        if: success()
+        run: |
+          curl -s -X POST \
+            "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+            -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
+            -d text="✅ Frontend ${{ github.ref_name }} deployed to Vercel"
+
+      - name: Notify Telegram on failure
+        if: failure()
+        run: |
+          curl -s -X POST \
+            "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+            -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
+            -d text="❌ Frontend ${{ github.ref_name }} Vercel deploy FAILED"
