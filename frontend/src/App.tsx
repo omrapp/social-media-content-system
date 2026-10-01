@@ -23,6 +23,7 @@ import { TermsPage } from "@/pages/Terms";
 import { connectWs } from "@/lib/ws";
 import { useWsInvalidation } from "@/hooks/useWsInvalidation";
 import { useTaskTracker } from "@/hooks/useTaskTracker";
+import { APP_INITIALS } from "@/lib/brand";
 
 // Reel editor is code-split: @remotion/player + the timeline are ~400 kB and
 // only ever needed on /editor/:mediaId.
@@ -47,7 +48,7 @@ function ProtectedRoutes() {
       <div className="min-h-screen flex items-center justify-center bg-gray-950">
         <div className="flex flex-col items-center gap-4">
           <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center animate-pulse">
-            <span className="text-white text-xs font-bold">TC</span>
+            <span className="text-white text-xs font-bold">{APP_INITIALS}</span>
           </div>
           <div className="flex gap-1">
             {[0, 1, 2].map((i) => (

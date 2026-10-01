@@ -168,7 +168,7 @@ export function DownloadsPage() {
   const hlStats = status?.highlights.files;
 
   const statRow = (label: string, value: string | number, accent?: string) => (
-    <div className="flex justify-between items-center py-2 border-b border-white/[0.04]">
+    <div key={label} className="flex justify-between items-center py-2 border-b border-white/[0.04]">
       <span className="text-xs text-gray-500">{label}</span>
       <span className={`text-sm font-medium tabular-nums font-mono ${accent || "text-gray-300"}`}>{value}</span>
     </div>

@@ -109,3 +109,9 @@ assets/music/cache.json
 
 # Local agent instructions (personal, not committed)
 CLAUDE.local.md
+# Commercial fonts — not redistributable, keep local only
+assets/fonts/Futura-*
+assets/fonts/GillSans-*
+assets/fonts/Handvetica-*
+assets/fonts/Northwell*
+assets/fonts/SabonLTStd-*

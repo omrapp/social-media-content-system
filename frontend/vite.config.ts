@@ -14,6 +14,8 @@ const pkg = JSON.parse(readFileSync(path.resolve(__dirname, "package.json"), "ut
 const reactVer = pkg.dependencies?.["react"] ?? "unknown";
 
 export default defineConfig({
+  // Sub-path deploys (GitHub Pages demo): VITE_BASE=/repo-name/
+  base: process.env.VITE_BASE ?? "/",
   define: {
     __APP_VERSION__:    JSON.stringify(pkg.version ?? "0.0.0"),
     __APP_COMMIT__:     JSON.stringify(git("git rev-parse --short HEAD")),

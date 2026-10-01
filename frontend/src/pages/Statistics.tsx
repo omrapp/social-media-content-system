@@ -6,7 +6,7 @@ import {
   TooltipProps,
 } from "recharts";
 import { useApi } from "@/hooks/useApi";
-import { CATEGORY_CHART_COLORS } from "@/constants/colors";
+import { categoryChartColor } from "@/constants/colors";
 import { staggerContainer, fadeUp } from "@/lib/motion";
 
 // ─── Types ─────────────────────────────────────────────────────────────────
@@ -176,7 +176,7 @@ export function StatisticsPage() {
 
   const categoryData = overview
     ? Object.entries(overview.by_category)
-        .map(([name, count]) => ({ name: name.replace("_", " "), count, fill: CATEGORY_CHART_COLORS[name] || "#6b7280" }))
+        .map(([name, count]) => ({ name: name.replace("_", " "), count, fill: categoryChartColor(name) }))
         .sort((a, b) => b.count - a.count)
     : [];
 

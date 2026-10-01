@@ -3,6 +3,9 @@
 const env = import.meta.env;
 
 export const APP_NAME: string = env.VITE_APP_NAME || "Social Media CMS";
+/** Two-letter monogram for the logo tile, e.g. "Social Media CMS" → "SM". */
+export const APP_INITIALS: string = APP_NAME.split(/\s+/).map((w) => w[0]).join("").slice(0, 2).toUpperCase();
+
 export const OPERATOR_NAME: string = env.VITE_OPERATOR_NAME || "the operator";
 export const CONTACT_EMAIL: string = env.VITE_CONTACT_EMAIL || "contact@example.com";
 
